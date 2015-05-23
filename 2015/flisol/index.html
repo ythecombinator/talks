@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Slides from my talk at Festival Latino Americano de Instalação de Software Livre (FLISOL 2015) about the importance of versioning and sharing code on Github.">
+    <meta name="author" content="Matheus Albuquerque Brasil">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Introdução a Git & Github | @mabrasil</title>
+    <!-- Social: Facebook-->
+    <meta property="og:url" content="http://mabrasil.github.io/talks/2015/flisol">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Uma Introdução a Git &amp; Github">
+    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/flisol/img/other/slides-cover.png">
+    <meta property="og:description" content="Slides from my talk at Festival Latino Americano de Instalação de Software Livre (FLISOL 2015) about the importance of versioning and sharing code on Github.">
+    <meta property="og:site_name" content="@mabrasil | Talks">
+    <meta property="article:author" content="https://www.facebook.com/matheus.brasil.56884">
+    <meta property="article:publisher" content="https://www.facebook.com/matheus.brasil.56884">
+    <!-- Social: Twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mabrasil_io">
+    <meta name="twitter:title" content="Uma Introdução a Git &amp; Github">
+    <meta name="twitter:description" content="Slides from my talk at Festival Latino Americano de Instalação de Software Livre (FLISOL 2015) about the importance of versioning and sharing code on Github.">
+    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/flisol/img/other/slides-cover.png">
+    <!-- Styles & Reveal-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/vendor/reveal.min.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="img/home.jpg">
+          <h3 class="white">Uma introdução a</h3>
+          <hr>
+          <h1 class="white">Git e Github</h1>
+          <h5 class="white text-left">@mabrasil</h5>
+          <h5 class="white text-right">#FLISOL2015</h5>
+        </section>
+        <section>
+          <section class="sec-slide text-left">
+            <h3>Eu sou...</h3>
+            <ul>
+              <li class="fragment">Full Stack Developer</li>
+              <li class="fragment">Estudante de Informática no IFCE (<3)</li>
+              <li class="fragment">Um entusiasta da web</li>
+            </ul>
+          </section>
+          <section class="sec-slide">
+            <h3>Desenvolvedor Front End</h3>
+            <hr><img src="img/logos/chegola.svg" alt="Chego Lá">
+          </section>
+          <section class="sec-slide">
+            <h2>Vocês podem me achar...</h2>
+            <div class="col-3 fragment"><img src="img/social/blog.png" alt="Meu Blog">
+              <p>mabrasil.rocks</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/social/twitter.png" alt="Meu Twitter">
+              <p>@mabrasil_io</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/social/gh.png" alt="Meu Github">
+              <p>/mabrasil</p>
+            </div>
+          </section>
+        </section>
+        <section class="sec-slide text-left">
+          <h3 class="text-left">Agenda</h3>
+          <ul>
+            <li class="fragment">Controle de Versão?</li>
+            <li class="fragment">Git</li>
+            <li class="fragment">Github</li>
+            <li class="fragment">Por onde começar?</li>
+            <li class="fragment">A importância para o Mercado</li>
+            <li class="fragment">Botando a mão na massa</li>
+          </ul>
+        </section>
+        <section data-background="#2980b9">
+          <h1>Controle de Versão?</h1>
+        </section>
+        <section>
+          <section class="sec-slide">
+            <h1>Lá no Ensino Fundamental...</h1>
+          </section>
+          <section data-background="white" class="sec-slide">
+            <p class="fragment">trabalho-biologia.pptx </p>
+            <p class="fragment">trabalho-biologia-2.pptx</p>
+            <p class="fragment">trabalho-biologia-21.04.pptx</p>
+            <p class="fragment">trabalho-biologia-final.pptx</p>
+            <p class="fragment">trabalho-biologia-final-cópia.pptx</p>
+          </section>
+        </section>
+        <section>
+          <section class="sec-slide">
+            <h1>Ao aprender a programar...</h1>
+          </section>
+          <section class="sec-slide">
+            <pre><code>alert('Hello, World!')
+</code></pre>
+            <p>hello-world.html</p>
+          </section>
+          <section class="sec-slide">
+            <pre><code>alert('Eu odeio química!');
+</code></pre>
+            <p>hello-world-2.html</p>
+          </section>
+          <section class="sec-slide">
+            <pre><code>document.write(5 + 6);
+</code></pre>
+            <p>hello-world-3.html</p>
+          </section>
+          <section class="sec-slide">
+            <pre><code>console.log(5 + 6);
+</code></pre>
+            <p>hello-world-4.html</p>
+          </section>
+          <section class="sec-slide">
+            <h1 class="blue">...	</h1>
+          </section>
+        </section>
+        <section><img src="img/other/version-control-geek-&amp;-poke.jpg" alt="A Necessidade de Versionar"></section>
+        <section>
+          <h3 class="blue fragment">DESENVOLVIMENTO</h3>
+          <h3 class="blue fragment">TESTES</h3>
+          <h3 class="blue fragment">PRODUÇÃO</h3>
+        </section>
+        <section>
+          <section data-background="#93c47d" class="sec-slide">
+            <h1 class="white">Histórico</h1>
+          </section>
+          <section data-background="#76a5af" class="sec-slide">
+            <h1 class="white">Colaboração</h1>
+          </section>
+          <section data-background="#8e7cc3" class="sec-slide">
+            <h1 class="white">Variações no Projeto</h1>
+          </section>
+          <section class="sec-slide">
+            <ul>
+              <li>Acompanhar e fornecer controle de alterações no código fonte</li>
+              <li>Manter diferentes versões do mesmo código</li>
+              <li>Software desenvolvido de forma colaborativa :)	</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-background="img/other/uncle-sam.jpg" class="top sec-slide">
+            <h1 class="red">I want you to Version Control your code!</h1>
+          </section>
+          <section class="sec-slide"><img src="img/other/cilada.svg" alt="É cilada, Bino!" width="70%"></section>
+        </section>
+        <section data-background="#2980b9">
+          <h1>Controle de Versão!</h1>
+        </section>
+        <section>
+          <section class="sec-slide">
+            <h2>Sistemas de Controle de Versionamento Centalizados</h2>
+            <hr>
+            <h2>Sistemas de Controle de Versionamento Distribuídos</h2>
+          </section>
+          <section class="sec-slide">
+            <h2>Centralizados</h2>
+            <ul>
+              <li class="fragment">Único repositório central​</li>
+              <li class="fragment">Cópias de trabalho são mantidas pelos desenvolvedores</li>
+              <li class="fragment">Estrutura <i>Commit/Update</i></li>
+            </ul>
+          </section>
+          <section class="sec-slide">
+            <h2>Centralizados</h2><img src="img/operations/operacoes_basicas_centralizado.png" alt="Sistemas de Controle de Versionamento Centalizados" width="50%">
+          </section>
+          <section class="sec-slide">
+            <h2>Centralizados</h2>
+            <div class="col-3 fragment"><img src="img/systems/cvs.jpeg" alt="CVS">
+              <p>CVS</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/systems/subversion.png" alt="Subversion">
+              <p>Subversion</p>
+            </div>
+          </section>
+          <section class="sec-slide">
+            <h2>Distribuídos</h2>
+            <ul>
+              <li class="fragment">Cada desenvolvedor mantem um repositório</li>
+              <li class="fragment">Estrutura <i>Pull/push/commit</i></li>
+              <li class="fragment">Comunicação mínima através da rede, commits mais rápidos :)</li>
+            </ul>
+          </section>
+          <section class="sec-slide">
+            <h2>Distribuídos</h2><img src="img/operations/operacoes_basicas_distribuido.png" alt="Sistemas de Controle de Versionamento Distribuídos" width="50%">
+          </section>
+          <section class="sec-slide">
+            <h2>Distribuídos</h2>
+            <div class="col-3 fragment"><img src="img/systems/mercurial.png" alt="Mercurial">
+              <p>Mercurial</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/systems/bazaar.png" alt="Bazaar">
+              <p>Bazaar</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/systems/darcs.svg" alt="Darcs">
+              <p>Darcs</p>
+            </div>
+          </section>
+        </section>
+        <section data-background="img/gifs/torvalds.gif"></section>
+        <section>
+          <section class="sec-slide"><img src="img/systems/git.png" alt="Git"></section>
+          <section data-background="#93c47d" class="sec-slide">
+            <h1 class="white">Filosofia</h1>
+          </section>
+          <section data-background="#93c47d" class="sec-slide">
+            <p class="white">Tratar os dados como snapshots ;)</p>
+          </section>
+          <section data-background="#76a5af" class="sec-slide">
+            <h1 class="white">Fluxo</h1>
+          </section>
+          <section data-background="#76a5af" class="sec-slide">
+            <ul class="white">
+              <li class="fragment">Working Directory</li>
+              <li class="fragment">HEAD</li>
+              <li class="fragment">Index</li>
+            </ul>
+          </section>
+          <section data-background="#8e7cc3" class="sec-slide">
+            <h1 class="white">Alguns conceitos...</h1>
+          </section>
+          <section data-background="#8e7cc3" class="sec-slide">
+            <ul class="white">
+              <li class="fragment">Branches</li>
+              <li class="fragment">Merge</li>
+              <li class="fragment">Clones</li>
+              <li class="fragment">Pull</li>
+              <li class="fragment">Push</li>
+              <li class="fragment">Tags</li>
+              <li class="fragment">Logs</li>
+              <li class="fragment">Diffs</li>
+              <li class="fragment">...</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section class="sec-slide"><img src="img/logos/github.png" alt="Github"></section>
+          <section data-background="img/gifs/party.gif" class="sec-slide">
+            <h1 class="white">Coding goes social!</h1>
+          </section>
+          <section class="sec-slide">
+            <ul>
+              <li class="fragment">Forking</li>
+              <li class="fragment">Pull Requests</li>
+              <li class="fragment">Issues e Issue Comments</li>
+              <li class="fragment">Seguidores</li>
+              <li class="fragment">Organizações</li>
+              <li class="fragment">Times</li>
+              <li class="fragment">...</li>
+              <li class="fragment">Octocat!</li>
+            </ul>
+          </section>
+          <section class="sec-slide"><img src="img/other/gangnamtocat.png" alt="Oppan Github Style" width="60%"></section>
+        </section>
+        <section>
+          <section data-background="#2980b9" class="sec-slide">
+            <h1 class="white">O que versionar?</h1>
+          </section>
+          <section class="sec-slide">
+            <ul>
+              <li class="fragment">Trabalhos da Faculdade</li>
+              <li class="fragment">Exemplos/Exercícios feitos</li>
+              <li class="fragment">Arquivos/Projetos pessoais</li>
+              <li class="fragment">Seu Portfólio :)</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-background="#2980b9" class="sec-slide">
+            <h1 class="white">Mercado de Trabalho</h1>
+          </section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/print-1.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/print-2.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/print-3.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/print-4.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/print-5.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/print-6.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/print-7.png" alt="A importância para o Mercado"></section>
+          <section data-background="#8e7cc3" class="sec-slide">
+            <h1 class="white">Só empresas pequenas?</h1>
+          </section>
+          <section data-background="#c0392b" class="sec-slide">
+            <h1 class="white">Nop ;)</h1>
+          </section>
+          <section data-background="white" class="sec-slide"><img src="img/logos/gcom-logo.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/print-8.png" alt="A importância para o Mercado"></section>
+          <section data-background="#8e7cc3" class="sec-slide">
+            <h1 class="white">Só empresas privadas?</h1>
+          </section>
+          <section data-background="#c0392b" class="sec-slide">
+            <h1 class="white">Nop ;)</h1>
+          </section>
+          <section data-background="img/obama.gif" class="sec-slide"></section>
+          <section data-background="white" class="sec-slide"><img src="img/prints/governo.png" alt="Github Government">
+            <p><i>https://government.github.com/</i></p>
+          </section>
+          <section data-background="#274e13" class="sec-slide">
+            <h1 class="white">No Brasil...</h1>
+          </section>
+          <section class="sec-slide">
+            <ul>
+              <li class="fragment">Departamento de Tecnologia da Informação do Banco Central do Brasil</li>
+              <li class="fragment">Portal de Software Livre do Governo</li>
+              <li class="fragment">Portal Brasileiro de Dados Abertos</li>
+              <li class="fragment">Empresa de Tecnologia e Informações da Previdência Social (DATAPREV)</li>
+              <li class="fragment">20+</li>
+            </ul>
+          </section>
+          <section data-background="img/gifs/happy.gif" class="sec-slide"></section>
+        </section>
+        <section>
+          <section data-background="#2980b9" class="sec-slide">
+            <h1 class="white">Vamos começar?</h1>
+          </section>
+          <section class="sec-slide">
+            <h2 class="blue">Botando a mão na massa</h2><img src="img/other/steroidtocat.png" alt="Ficar Monstro dos Open Source" width="70%">
+          </section>
+        </section>
+        <section data-background="img/gifs/question.gif">
+          <h1 class="white">Perguntas?</h1>
+        </section>
+        <section data-background="img/other/where-magic-happens.jpg">
+          <h1 class="blue">É contigo!</h1>
+        </section>
+        <section data-background="img/gifs/thats-all-folks.gif">
+          <p class="white top">< obrigado ></p>
+          <p class="white bottom">@mabrasil</p>
+        </section>
+      </div>
+    </div>
+    <script src="js/vendor/head.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
