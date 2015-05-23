@@ -17,3 +17,11 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Where:** Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Campus Fortaleza.
 - **Description:** [Abraão](https://github.com/AbraaoAlves) and I will make an overview of the features of Ionic: a framework for creating hybrid apps that has been growing more and more. It's free and open source and offers a HTML, CSS and JS library optimized for smartphones - as well as great tools that give us a great alternative for mobile development.
 - **Slides:** *Not available yet*.
+
+#### [IX Pylestras](http://pylestras.org/evento/ix-pylestras/)
+
+- **Title:** *Aventurando-se com metadados: Micro Data e Open Graph*
+- **When:** May, 30
+- **Where:** Universidade de Fortaleza - Unifor.
+- **Description:** An introduction to the importance of one of the key concepts behind the Semantic Web: metadata. I will cover two of the most used protocols: Microdata and the Open Graph, and how metadata can help your project to have information organized in a way that not only humans understand it, regardless of the technology used on the back end.
+- **Slides:** *Not available yet*.
