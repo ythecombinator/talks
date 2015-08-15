@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Slides from my talk at Ionic Meetup about the improving your Ionic workflow.">
+    <meta name="author" content="Matheus Albuquerque Brasil">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um projeto mobile open source em duas semanas | @mabrasil</title>
+    <!-- Social: Facebook-->
+    <meta property="og:url" content="http://mabrasil.github.io/talks/2015/cocoaheads">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Um projeto mobile open source em duas semanas">
+    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/cocoaheads/img/other/slides-cover.png">
+    <meta property="og:description" content="Slides from my talk at Ionic Meetup about the improving your Ionic workflow.">
+    <meta property="og:site_name" content="@mabrasil | Talks">
+    <meta property="article:author" content="https://www.facebook.com/matheus.brasil.56884">
+    <meta property="article:publisher" content="https://www.facebook.com/matheus.brasil.56884">
+    <!-- Social: Twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mabrasil_io">
+    <meta name="twitter:title" content="Um projeto mobile open source em duas semanas">
+    <meta name="twitter:description" content="Slides from my talk at Ionic Meetup about the improving your Ionic workflow.">
+    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/cocoaheads/img/other/slides-cover.png">
+    <!-- Styles & Reveal-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/vendor/reveal.min.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section data-background="img/home.jpg" class="sec-slide text-left">
+            <h3 class="red upper">Um projeto mobile</h3>
+            <h1 class="blue upper">open source</h1>
+            <h3 class="red upper">em</h3>
+            <h1 class="blue upper">duas semanas</h1>
+            <h5 class="brown upper">@mabrasil</h5>
+            <h5 class="brown upper">#Ionic Meetup Fortaleza</h5>
+          </section>
+          <section data-background="#795548" class="sec-slide">
+            <h1 class="white upper">Ou</h1>
+          </section>
+          <section data-background="#795548" class="sec-slide text-left">
+            <h3 class="red upper">Melhorando seu</h3>
+            <h1 class="blue upper">workflow Ionic</h1>
+          </section>
+        </section>
+        <section data-background="#00796B">
+          <h3 class="white">Slides disponíveis em</h3>
+          <p class="fragment">☞  http://goo.gl/bswqHD</p>
+        </section>
+        <section>
+          <section class="sec-slide text-left">
+            <h3>Eu sou...</h3>
+            <ul>
+              <li class="fragment">Full Stack Developer</li>
+              <li class="fragment">Estudante de Informática no IFCE (<3)</li>
+              <li class="fragment">Um entusiasta da web</li>
+            </ul>
+          </section>
+          <section class="sec-slide">
+            <h2>Vocês podem me achar...</h2>
+            <div class="col-3 fragment"><img src="img/social/blog.png" alt="Meu Blog">
+              <p>mabrasil.rocks</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/social/twitter.png" alt="Meu Twitter">
+              <p>@mabrasil_io</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/social/gh.png" alt="Meu Github">
+              <p>/mabrasil</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-background="#F44336" class="sec-slide">
+            <h1 class="white upper">Aviso</h1>
+            <h3 class="white upper fragment">Essa talk é sobre experiências!</h3>
+          </section>
+          <section data-background="#795548" class="sec-slide">
+            <h1 class="white upper">Quem aqui...?</h1>
+          </section>
+          <section data-background="#4CAF50" class="sec-slide">
+            <h1 class="white upper">Essa talk é pra vocês!</h1>
+          </section>
+        </section>
+        <section class="sec-slide text-left">
+          <h3 class="text-left">Agenda</h3>
+          <ul>
+            <li class="fragment">Contexto</li>
+            <li class="fragment">Ferramentas</li>
+            <li class="fragment">Mudanças</li>
+          </ul>
+        </section>
+        <section>
+          <section data-background="#00796B" class="sec-slide">
+            <h1 class="upper white">Contexto</h1>
+          </section>
+          <section data-background="#607D8B" class="sec-slide"><img src="img/logos/fif15.png" alt="Front in Fortaleza"></section>
+          <section data-background="#607D8B" class="sec-slide"><img src="img/changes/print_conf.png" alt="Conf Boilerplate"></section>
+          <section class="sec-slide text-left">
+            <h3>Uma aplicação que...</h3>
+            <ul>
+              <li class="fragment">Fosse Híbrida</li>
+              <li class="fragment">Consumisse dados de um JSON remoto</li>
+              <li class="fragment">Sintetizasse as mesmas informações do site</li>
+              <li class="fragment upper">~ Duas semanas</li>
+            </ul>
+          </section>
+          <section class="sec-slide"><img src="img/other/schema.png" alt="Front in Fortaleza"></section>
+        </section>
+        <section>
+          <section data-background="#00796B" class="sec-slide">
+            <h1 class="upper white">Ferramentas</h1>
+          </section>
+          <section class="sec-slide">
+            <h2>Ionic CLI</h2>
+            <pre><code>$ npm install -g ionic
+</code></pre>
+            <p>Facilita o processo de criação/execução/compilação/depuração de aplicações Ionic
+              <pre class="fragment"><code>$ ionic start myapp [template]
+$ ionic setup sass
+$ ionic serve [options]
+$ ionic platform [OS]
+$ ionic run ios [options]
+$ ionic resources [options]
+$ ionic build [OS]
+</code></pre>
+            </p>
+          </section>
+          <section class="sec-slide">
+            <pre class="fragment"><code>$ ionic start frontinfor sidemenu
+</code></pre>
+            <h2 class="fragment">"Let there be code!"</h2>
+            <pre class="fragment"><code>|-- www/
+|   |-- css/
+|   |   |-- style.css
+|   |-- img/
+|   |-- js/
+|   |   |-- app.js
+|   |   |-- controllers.js
+|   |-- templates/
+|   |-- index.html
+|-- hooks/
+|-- plugins/
+|-- scss/
+|-- bower.json
+|-- config.xml
+|-- gulpfile.js
+|-- ionic.project
+|-- package.json</code></pre>
+          </section>
+        </section>
+        <section>
+          <section data-background="#00796B" class="sec-slide">
+            <h1 class="upper white">Mudanças</h1>
+          </section>
+          <section class="sec-slide"><img src="img/changes/print_issues.png" alt="Github Issues"></section>
+        </section>
+        <section>
+          <section data-background="#795548" class="sec-slide">
+            <h1 class="upper white">Templating</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Jade</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Jade...</h2>
+            <p class="white fragment">✔ Tags</p>
+            <p class="white fragment">✔ Variáveis/Locals</p>
+            <p class="white fragment">✔ Atributos</p>
+            <p class="white fragment">✔ Blocos de Estilo/Scripts</p>
+            <p class="white fragment">✔ Código JS</p>
+            <p class="white fragment">✔ Condicionais(if)/Iterações(each)</p>
+            <p class="white fragment">✔ Filters</p>
+            <p class="white fragment">✔ Mixins</p>
+            <p class="white fragment">✔ Include/Extend</p>
+          </section>
+          <section class="sec-slide text-left">
+            <h2>Antes...</h2>
+            <script src="https://gist.github.com/mabrasil/f8ada9fc5a57684554c7.js"></script>
+          </section>
+          <section class="sec-slide text-left">
+            <h2>Depois...</h2>
+            <script src="https://gist.github.com/mabrasil/26bb6fcb17eda734c7e1.js"></script>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Jade...</h2>
+            <p class="white fragment">✔ Produtividade</p>
+            <p class="white fragment">✔ Legibilidade</p>
+            <p class="white fragment">✔ Manutenibilidade</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Html2TS</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Html2TS...</h2>
+            <p class="white fragment">✔ Servir HTML como string dentro do Javascript</p>
+            <p class="white fragment">✔ Templates já carregados em cache</p>
+            <p class="white fragment">✔ Menos requisições</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Html2TS...</h2>
+            <p class="white fragment">✔ Performance</p>
+            <p class="white fragment">Status: <b>A ser implementado</b></p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#795548" class="sec-slide">
+            <h1 class="upper white">Estilos</h1>
+          </section>
+          <section class="sec-slide">
+            <h2>Nós temos...</h2>
+            <div class="col-3 fragment"><img src="img/logos/less.jpg" alt="Less">
+              <p>Less</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/logos/sass.jpg" alt="SASS">
+              <p>SASS</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/logos/stylus.jpg" alt="Stylus">
+              <p>Stylus</p>
+            </div>
+            <h2 class="fragment">...</h2>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Stylus</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Stylus...</h2>
+            <p class="white fragment">✔ Variáveis</p>
+            <p class="white fragment">✔ Aninhamento</p>
+            <p class="white fragment">✔ Herança</p>
+            <p class="white fragment">✔ Imports</p>
+            <p class="white fragment">✔ Color Functions</p>
+            <p class="white fragment">✔ Operações matemáticas</p>
+            <p class="white fragment">✔ ...</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Stylus...</h2>
+            <p class="white fragment">✔ As vantagens que um pré processador de CSS traz</p>
+            <p class="white fragment">✔ Uma dependência a menos (Ruby)</p>
+            <p class="white fragment">Status: <b>A ser implementado</b></p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Stylint</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Stylint...</h2>
+            <p class="white fragment">✔ Encontrar pequenos erros</p>
+            <p class="white fragment">✔ Impor uma styleguide</p>
+            <p class="white fragment">✔ Plugins para editores</p>
+            <p class="white fragment">✔ Plugins para task runners</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Stylint...</h2>
+            <p class="white fragment">✔ Padronização</p>
+            <p class="white fragment">Status: <b>A ser implementado</b></p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#795548" class="sec-slide">
+            <h1 class="upper white">Scripting</h1>
+          </section>
+          <section class="sec-slide">
+            <h2>Nós temos...</h2>
+            <div class="col-3 fragment"><img src="img/logos/typescript.png" alt="Typescript">
+              <p>Typescript</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/logos/livescript.png" alt="Livescript">
+              <p>Livescript</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/logos/purescript.png" alt="Purescript">
+              <p>Purescript</p>
+            </div>
+            <h2 class="fragment">...</h2>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Typescript</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Typescript...</h2>
+            <p class="white fragment">✔ EcmaScript6</p>
+            <p class="white fragment">✔ Sistema de Tipos</p>
+            <p class="white fragment">✔ Fácil conversão da atual codebase</p>
+            <p class="white fragment">✔ Angular 2.0 <3</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Typescript...</h2>
+            <p class="white fragment">✔ Produtividade</p>
+            <p class="white fragment">✔ Legibilidade</p>
+            <p class="white fragment">✔ Manutenibilidade</p>
+            <p class="white fragment">✔ Alinhamento com o Futuro</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Modularização</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Modularização...</h2>
+            <p class="white fragment">✔ Single Responsability</p>
+            <p class="white fragment">✔ Separation of Concerns</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Antes...</h2>
+            <pre class="fragment"><code>|-- www/
+|   |-- js/
+|   |   |-- app.js
+|   |   |-- controllers.js
+|   |   |-- directives.js
+|   |   |-- filters.js
+|   |   |-- services.js
+</code></pre>
+            <p class="fragment">No app.js</p>
+            <pre class="fragment"><code>angular.module('confboilerplate', [
+  'ionic',
+  'ngMap',
+  'confboilerplate.controllers',
+  'confboilerplate.services',
+  'confboilerplate.filters',
+  'confboilerplate.directives'
+])
+</code></pre>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Agora...</h2>
+            <pre class="fragment"><code>'use strict';
+angular.module('confboilerplate.schedule', [
+  'confboilerplate.schedule.controllers',
+  'confboilerplate.schedule.services',
+  'confboilerplate.schedule.directives',
+]);
+angular.module('confboilerplate.schedule.controllers', ['underscore','ionic']);
+angular.module('confboilerplate.schedule.services', ['underscore','ionic']);
+angular.module('confboilerplate.schedule.directives', ['underscore','ionic']);
+</code></pre>
+            <p class="fragment">No app.js</p>
+            <pre class="fragment"><code>angular.module('confboilerplate', [
+  'ionic',
+  'confboilerplate.about',
+  'confboilerplate.location',
+  'confboilerplate.partners',
+  'confboilerplate.schedule',
+  ...
+  'confboilerplate.sponsors'
+])
+</code></pre>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Modularização...</h2>
+            <p class="white fragment">✔ Testabilidade</p>
+            <p class="white fragment">✔ Legibilidade</p>
+            <p class="white fragment">✔ Manutenibilidade</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#795548" class="sec-slide">
+            <h1 class="upper white">Automação</h1>
+          </section>
+          <section class="sec-slide">
+            <h2>Nós temos...</h2>
+            <div class="col-3 fragment"><img src="img/logos/grunt.png" alt="Grunt">
+              <p>Grunt</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/logos/gulp.png" alt="Gulp">
+              <p>Gulp</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/logos/broccoli.png" alt="Broccoli">
+              <p>Broccoli</p>
+            </div>
+            <h2 class="fragment">...</h2>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Gulp</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Gulp...</h2>
+            <p class="white fragment">✔ Baseado em Streams</p>
+            <p class="white fragment">✔ Tarefas executadas assincronamente</p>
+            <p class="white fragment">✔ + Código - Configuração</p>
+            <p class="white fragment">✔ API relativamente simples</p>
+            <p class="white fragment">✔ Boa quantidade de plugins</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Gulp...</h2>
+            <p class="white fragment">✔ Produtividade</p>
+            <p class="white fragment">✔ Automação que funciona</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Tasks Splitting</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Tasks Splitting...</h2>
+            <p class="white fragment">✔ gulpfile remodelado</p>
+            <p class="white fragment">✔ Cada task é um módulo Node requisitado por um novo módulo "Gulp"</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Antes...</h2>
+            <p class="fragment">No gulpfile.js</p>
+            <pre class="fragment"><code>var gulp = require('gulp');
+var gutil = require('gulp-util');
+var bower = require('bower');
+var concat = require('gulp-concat');
+...
+
+var paths = {
+  ts: ['./src/**/*.ts'],
+  ...
+};
+gulp.task('default', ['scripts', 'sass', 'jade']);
+...
+</code></pre>
+            <p class="fragment">... 120+ linhas</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Agora...</h2>
+            <p class="fragment">No gulpfile.js</p>
+            <pre class="fragment"><code>'use strict';
+require('./gulp');
+</code></pre>
+            <p class="fragment">Em gulp/</p>
+            <pre class="fragment"><code>|-- tasks/
+|-- index.js
+|-- paths.js
+</code></pre>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Agora...</h2>
+            <p class="fragment">Cada task...</p>
+            <pre class="fragment"><code>'use strict';
+
+// Necessary Plugins
+var gulp     = require('gulp')
+    ,plumber   = require('gulp-plumber')
+    ,paths   = require('../paths')
+    ,jade    = require('gulp-jade');
+
+// Call Jade to compile Templates
+module.exports = gulp.task('jade', function () {
+  return gulp.src(paths.source.jade)
+    .pipe(plumber())
+    .pipe(jade({pretty: true }))
+    .pipe(gulp.dest(paths.build.html))
+});
+</code></pre>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Tasks Splitting...</h2>
+            <p class="white fragment">✔ Legibilidade</p>
+            <p class="white fragment">✔ Manutenibilidade</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#795548" class="sec-slide">
+            <h1 class="upper white">Depuração</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Ionic Lab</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <div class="col-desktop"><img src="img/tools/lab.png" alt="Ionic Lab"></div>
+            <p>Debug Android e iOS simultaneamente</p>
+            <pre><code>$ ionic serve --lab
+</code></pre>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Browser Sync</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Browser Sync...</h2>
+            <p class="white fragment">✔ Servidor de arquivos estáticos</p>
+            <p class="white fragment">✔ Live Reload</p>
+            <p class="white fragment">✔ Injeção de CSS</p>
+            <p class="white fragment">✔ Sincronização de scrolls, clicks, dados, navegação etc</p>
+            <p class="white fragment">✔ Painel de configuração</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Browser Sync...</h2>
+            <p class="white fragment">✔ Uma boa alternativa para debug</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#795548" class="sec-slide">
+            <h1 class="upper white">Integração Contínua</h1>
+          </section>
+          <section class="sec-slide">
+            <h2>Nós temos...</h2>
+            <div class="col-3 fragment"><img src="img/logos/travis.png" alt="Travis">
+              <p>Travis</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/logos/codeship.png" alt="Codeship">
+              <p>Codeship</p>
+            </div>
+            <div class="col-3 fragment"><img src="img/logos/circle.png" alt="Circle">
+              <p>Circle</p>
+            </div>
+            <h2 class="fragment">...</h2>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Travis & Codeship</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Travis & Codeship...</h2>
+            <p class="white fragment">✔ Fácil configuração</p>
+            <p class="white fragment">✔ Deployments simples</p>
+            <p class="white fragment">✔ Integração com Github</p>
+            <p class="white fragment">✔ Emails com reports de builds</p>
+            <p class="white fragment">✔ Interface simples/agradável <3</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Travis & Codeship...</h2>
+            <p class="white fragment">✔ Serviços de CI que atendem as necessidades básicas do projeto</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide">
+            <h1 class="upper white">Code Climate</h1>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Code Climate...</h2>
+            <p class="white fragment">✔ Complexidade</p>
+            <p class="white fragment">✔ Complexidade por Método</p>
+            <p class="white fragment">✔ Duplicação de código</p>
+            <p class="white fragment">✔ Quantidade de linhas de código</p>
+            <p class="white fragment">✔ ...</p>
+            <p class="white fragment">✔ Integração com Github</p>
+            <p class="white fragment">✔ Emails com reports de qualidade</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">Code Climate...</h2>
+            <p class="white fragment">✔ Análise estática de qualidade de código executada automaticamente</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">David DM...</h2>
+            <p class="white fragment">✔ Análise de Dependências</p>
+            <p class="white fragment">✔ Integração com Github</p>
+          </section>
+          <section data-background="#388E3C" class="sec-slide text-left">
+            <h2 class="white">David DM...</h2>
+            <p class="white fragment">✔ Visão geral das dependências (versão em uso, mais recente, o que está desatualizado...)</p>
+            <p class="white fragment">Status: <b>Implementado</b></p>
+          </section>
+          <section class="sec-slide"><img src="img/changes/print_badges.png" alt="Github Badges"></section>
+        </section>
+        <section>
+          <section data-background="#4CAF50" class="sec-slide">
+            <h1 class="upper white">Só isso?</h1>
+          </section>
+          <section data-background="#D32F2F" class="sec-slide">
+            <h1 class="upper white">Não :)</h1>
+          </section>
+          <section class="sec-slide text-left">
+            <h3>Ainda falta...</h3>
+            <ul>
+              <li class="fragment">Testes (End2End, Unitário, A/B)</li>
+              <li class="fragment">Cobertura de Testes</li>
+              <li class="fragment">Offline First</li>
+              <li class="fragment">Reformulações no Design (Material?)</li>
+              <li class="fragment">...</li>
+            </ul>
+          </section>
+          <section data-background="img/gifs/mission.jpg" class="sec-slide">
+            <h1 class="upper white">Sua missão, caso deseje aceitá-la...</h1>
+          </section>
+          <section class="sec-slide text-left">
+            <ul>
+              <li class="fragment">Estudar todas essas tecnologias <i>mind-blowing</i></li>
+              <li class="fragment">Contribuir para open source...</li>
+              <li class="fragment">... incluindo o Conf Boilerplate :)</li>
+              <li class="fragment">Vir nos próximos meetups nos contar o que você tem feito de incrível :)</li>
+            </ul>
+          </section>
+        </section>
+        <section data-background="img/gifs/question.gif">
+          <h1 class="white upper">Perguntas?</h1>
+        </section>
+        <section data-background="img/gifs/thats-all-folks.gif">
+          <p class="white top">< obrigado ></p>
+          <p class="white bottom">@mabrasil</p>
+        </section>
+      </div>
+    </div>
+    <script src="js/vendor/head.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
