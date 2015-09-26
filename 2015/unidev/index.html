@@ -43,7 +43,7 @@
         <section data-background="images/home.png"></section>
         <section data-background="#d35400">
           <h3 class="white">Slides disponíveis em</h3>
-          <p class="fragment">☞  mabrasil.github.io/talks/2015/unidev</p>
+          <p class="fragment">☞ http://goo.gl/JFKwg3</p>
         </section>
         <section>
           <section class="sec-slide left">
@@ -168,12 +168,12 @@
             <h1 class="white upper left">Estado?</h1>
           </section>
           <section data-background="#f39c12" class="sec-slide">
-            <h3 class="white left"><i>“The functional programmer sounds rather like a medieval monk, denying himselfthe pleasures of life in the hope that it will make him virtuous.”.</i></h3>
+            <h3 class="white left"><i>“The functional programmer sounds rather like a medieval monk, denying himself the pleasures of life in the hope that it will make him virtuous.”.</i></h3>
             <p class="white right">John Hughes</p>
             <p class="white fragment">(Ju Gonçalves - Reduce seu novo melhor amigo)</p>
           </section>
           <section data-background="#f39c12" class="sec-slide">
-            <h3 class="white left"><i>“Em ciência da computação, programação funcional é um paradigma de programação que trata a computação como uma avaliação de funções matemáticas e que evita estados ou dados mutáveis.</i></h3>
+            <h3 class="white left"><i>“Em ciência da computação, programação funcional é um paradigma de programação que trata a computação como uma avaliação de funções matemáticas e que evita estados ou dados mutáveis.”.</i></h3>
             <p class="white right">Wikipedia</p>
           </section>
           <section class="sec-slide left">
@@ -238,26 +238,13 @@ fatorial n = product [1..n]
 
 map :: (a -> b) -> [a] -> [b]
 filter :: (a -> Bool) -> [a] -> [a]
-foldr :: (a -> b -> b) -> b -> [a] -> b
 </code></pre>
           </section>
           <section class="sec-slide left">
-            <h3>First-Order Functions</h3>
+            <h3>First Class Functions</h3>
             <pre><code>var add = function(a, b){
   return a + b
 }
-</code></pre>
-          </section>
-          <section class="sec-slide left">
-            <h3>Closures</h3>
-            <pre><code>var add = function(a){
-  return function(b){
-    return a + b
-  }
-}
-
-var add2 = add(2)
-add2(3) // => 5
 </code></pre>
           </section>
           <section class="sec-slide left">
@@ -274,6 +261,12 @@ checaIntervalo x = "Não tá no intervalo"
           <section class="sec-slide left">
             <h3>List Comprehensions</h3>
             <pre><code>quadrado = [ x*x | x <- nums, x > 2 ]
+
+-- | Se lembram do map?
+[x+3 | x <- [1,5,3,1,6]]
+
+-- | Com um predicado...
+[ 2*x | x <- [0..], x^2 > 3 ]
 </code></pre>
           </section>
           <section class="sec-slide left">
@@ -384,7 +377,7 @@ uncurry :: (a -> b -> c) -> (a, b) -> c</code></pre>
             </ul>
           </section>
           <section class="sec-slide left">
-            <h2>Concorrcência...</h2>
+            <h2>Concorrência...</h2>
             <p class="fragment">✘ Identificar aspectos concorrentes no problema a ser resolvido</p>
             <p class="fragment">✘ Gerenciar como os dados são acessados e compartilhados entre as tarefas</p>
           </section>
@@ -531,7 +524,7 @@ uncurry :: (a -> b -> c) -> (a, b) -> c</code></pre>
           <section data-background="#16a085" class="sec-slide">
             <h1 class="white upper">Só na gringa?</h1>
           </section>
-          <section data-background="#c0392b" class="sec-slide">
+          <section data-background="images/gifs/no.gif" class="sec-slide">
             <h1 class="white upper">Nop :)</h1>
           </section>
           <section class="sec-slide"><img src="images/cases/nubank-apply.png" alt="Quer trabalhar na Nubank?"></section>
@@ -757,7 +750,7 @@ uncurry :: (a -> b -> c) -> (a, b) -> c</code></pre>
             <h1 class="white upper">Concluindo...</h1>
           </section>
           <section data-background="images/other/enemy.jpg" class="sec-slide">
-            <h1 class="primary upper">Enemy of the state?</h1>
+            <h1 class="primary upper">Inimigo do Estado?</h1>
           </section>
           <section data-background="#d35400" class="sec-slide">
             <h2 class="white left"><i>“Program imperatively when needed, and functionally when possible.”.</i></h2>
