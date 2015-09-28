@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html>
+  <!-- Contains data set at config.json-->
   <head>
+    <!-- Title-->
+    <title>Aventurando-se com metadados: Micro Data e Open Graph</title>
+    <!-- Basic Metadata-->
     <meta charset="UTF-8">
-    <meta name="description" content="Slides from my talk at Pylestras about metadata, focusing in Microdata and Open Graph">
-    <meta name="author" content="Matheus Albuquerque Brasil">
+    <meta name="description" content="Slides from my talk at Pylestras about metadata, focusing in Microdata and Open Graph.">
+    <meta name="author" content="@mabrasil_io">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aventurando-se com metadados: Micro Data e Open Graph | @mabrasil</title>
-    <!-- Social: Facebook-->
-    <meta property="og:url" content="http://mabrasil.github.io/talks/2015/pylestras">
-    <meta property="og:type" content="article">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="vendor/reveal.js/css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="vendor/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" href="vendor/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="images/meta/favicon.png">
+    <!-- Social Metadata-->
+    <!-- Social: Facebook / Open Graph-->
     <meta property="og:title" content="Aventurando-se com metadados: Micro Data e Open Graph">
-    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/pylestras/img/other/slides-cover.png">
     <meta property="og:description" content="Slides from my talk at Pylestras about metadata, focusing in Microdata and Open Graph.">
-    <meta property="og:site_name" content="@mabrasil | Talks">
-    <meta property="article:author" content="https://www.facebook.com/matheus.brasil.56884">
-    <meta property="article:publisher" content="https://www.facebook.com/matheus.brasil.56884">
+    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/pylestras/images/meta/screenshot.png">
+    <meta property="og:url" content="http://mabrasil.github.io/talks/2015/pylestras/">
+    <meta property="og:site_name" content="Aventurando-se com metadados: Micro Data e Open Graph">
+    <meta property="og:type" content="website">
     <!-- Social: Twitter-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@mabrasil_io">
     <meta name="twitter:title" content="Aventurando-se com metadados: Micro Data e Open Graph">
     <meta name="twitter:description" content="Slides from my talk at Pylestras about metadata, focusing in Microdata and Open Graph.">
-    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/pylestras/img/other/slides-cover.png">
-    <!-- Styles & Reveal-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/vendor/reveal.min.js"></script>
+    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/pylestras/images/meta/screenshot.png">
+    <meta name="twitter:url" content="http://mabrasil.github.io/talks/2015/pylestras/">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Social: Google+-->
+    <meta itemprop="name" content="Aventurando-se com metadados: Micro Data e Open Graph">
+    <meta itemprop="description" content="Slides from my talk at Pylestras about metadata, focusing in Microdata and Open Graph.">
+    <meta itemprop="image" content="http://mabrasil.github.io/talks/2015/pylestras/images/meta/screenshot.png">
+    <!-- Google Analytics Tracking-->
+    <!-- Google Analytics tracking-->
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-background="img/home.jpg">
-          <h5 class="purple text-left">@mabrasil</h5>
-          <h5 class="purple text-left">#pylestras</h5>
-          <h1 class="red">AVENTURANDO-SE</h1>
-          <h4 class="red">COM</h4>
-          <h1 class="red">METADADOS</h1>
+        <section data-background="images/home.jpg">
+          <h5 class="primary left">@mabrasil</h5>
+          <h5 class="primary left">#pylestras</h5>
+          <h1 class="secondary">AVENTURANDO-SE</h1>
+          <h4 class="secondary">COM</h4>
+          <h1 class="secondary">METADADOS</h1>
           <hr>
           <h2 class="red-dark">MICRODATA & OPEN GRAPH</h2>
         </section>
@@ -42,7 +54,7 @@
           <p class="fragment">☞  http://goo.gl/w0dnby</p>
         </section>
         <section>
-          <section class="sec-slide text-left">
+          <section class="sec-slide left">
             <h3>Eu sou...</h3>
             <ul>
               <li class="fragment">Full Stack Developer</li>
@@ -52,23 +64,23 @@
           </section>
           <section class="sec-slide">
             <h3>Desenvolvedor Front End</h3>
-            <hr><img src="img/logos/chegola.svg" alt="Chego Lá">
+            <hr><img src="images/logos/chegola.svg" alt="Chego Lá">
           </section>
           <section class="sec-slide">
             <h2>Vocês podem me achar...</h2>
-            <div class="col-3 fragment"><img src="img/social/blog.png" alt="Meu Blog">
+            <div class="col-3 fragment"><img src="images/social/blog.png" alt="Meu Blog">
               <p>mabrasil.rocks</p>
             </div>
-            <div class="col-3 fragment"><img src="img/social/twitter.png" alt="Meu Twitter">
+            <div class="col-3 fragment"><img src="images/social/twitter.png" alt="Meu Twitter">
               <p>@mabrasil_io</p>
             </div>
-            <div class="col-3 fragment"><img src="img/social/gh.png" alt="Meu Github">
+            <div class="col-3 fragment"><img src="images/social/gh.png" alt="Meu Github">
               <p>/mabrasil</p>
             </div>
           </section>
         </section>
-        <section class="sec-slide text-left">
-          <h3 class="text-left">O que veremos</h3>
+        <section class="sec-slide left">
+          <h3 class="left">O que veremos</h3>
           <ul>
             <li class="fragment">Conceitos iniciais</li>
             <li class="fragment">Metadata?</li>
@@ -82,23 +94,23 @@
         <section>
           <section class="sec-slide">
             <h3>hy · per · text</h3>
-            <h5 class="fragment red">substantivo</h5>
+            <h5 class="fragment secondary">substantivo</h5>
             <p class="fragment">Sistema de organização da informação que <i>liga tópicos</i> na tela para <i>informações relacionadas</i>.</p>
           </section>
           <section class="sec-slide">
             <h3>hy · per · link</h3>
-            <h5 class="fragment red">substantivo</h5>
+            <h5 class="fragment secondary">substantivo</h5>
             <p class="fragment">Um link de um arquivo ou documento de hipertexto <i>para outro local ou arquivo</i>.</p>
           </section>
           <section class="sec-slide">
             <h3>in · for · ma · ção</h3>
-            <h5 class="fragment red">substantivo</h5>
+            <h5 class="fragment secondary">substantivo</h5>
             <p class="fragment">Esclarecimento dado sobre os méritos ou estado de algo; fatos fornecidos ou aprendidos sobre algo ou alguém.</p>
             <p class="fragment midnight"><i>Ex.:</i> Detalhes, Particularidades, Fatos, Figuras, Estatísticas... <strong>Dados</strong>...</p>
           </section>
           <section class="sec-slide">
             <h3>da · dos</h3>
-            <h5 class="fragment red">substantivo</h5>
+            <h5 class="fragment secondary">substantivo</h5>
             <div class="fragment">
               <h4 class="midnight">Na computação...</h4>
               <p>Quantidades, caracteres ou símbolos dos quais operações são executadas por um computador, sendo armazenados e transmitidos na forma de sinais eléctricos e gravados no suporte de gravação magnética, óptica ou mecânica.</p>
@@ -113,12 +125,12 @@
         <section>
           <section class="sec-slide">
             <h3>meta · da · dos</h3>
-            <h5 class="fragment red">substantivo</h5>
+            <h5 class="fragment secondary">substantivo</h5>
             <p class="fragment">Um conjunto de dados que descreve e dá informações sobre outros dados.</p>
             <p class="fragment">...</p>
             <h6 class="fragment">Dados sobre dados ;)</h6>
           </section>
-          <section data-background="img/gifs/sad.gif" class="sec-slide">
+          <section data-background="images/gifs/sad.gif" class="sec-slide">
             <h1>Só isso?</h1>
           </section>
           <section class="sec-slide">
@@ -172,7 +184,7 @@
           </section>
           <section class="sec-slide">
             <h2>Alguns padrões...</h2>
-            <ul class="text-left">
+            <ul class="left">
               <li class="fragment">Dublin Core - Mais flexibilidade para os autores e melhorias de SEO</li>
               <li class="fragment">Darwin Core - Biologia</li>
               <li class="fragment">CDWA - Trabalhos de arte</li>
@@ -184,7 +196,7 @@
           </section>
           <section class="sec-slide">
             <h2>Exemplo</h2>
-            <div class="col-example"><img src="img/examples/painting_monalisa_original.jpg" alt="Mona Lisa Original"></div>
+            <div class="col-example"><img src="images/examples/painting_monalisa_original.jpg" alt="Mona Lisa Original"></div>
             <div class="col-desktop fragment">
               <pre><code>Title: Mona Lisa
 Creator: Leonardo da Vinci
@@ -199,7 +211,7 @@ Rights: Musée du Louvre
           </section>
           <section class="sec-slide">
             <h2>Exemplo</h2>
-            <div class="col-example"><img src="img/examples/painting_monalisa_digital.jpg" alt="Mona Lisa Digital"></div>
+            <div class="col-example"><img src="images/examples/painting_monalisa_digital.jpg" alt="Mona Lisa Digital"></div>
             <div class="col-desktop fragment">
               <pre><code>Title: Mona Lisa
 Creator: < Quem fez essa versão digital >
@@ -231,7 +243,7 @@ Rights: Musée du Louvre
         <section>
           <section class="sec-slide">
             <h3>se · mân · ti · ca</h3>
-            <h5 class="fragment red">substantivo</h5>
+            <h5 class="fragment secondary">substantivo</h5>
             <p class="fragment">O significado/interpretação do significado de uma palavra, de uma frase ou de uma expressão em um determinado contexto.</p>
           </section>
           <section class="sec-slide">
@@ -243,7 +255,7 @@ Rights: Musée du Louvre
             <p class="fragment">< head ></p>
             <p class="fragment">< meta ></p>
           </section>
-          <section data-background="img/gifs/poker.gif" class="sec-slide">
+          <section data-background="images/gifs/poker.gif" class="sec-slide">
             <h1 class="white">E onde entra a <i>Web Semântica</i>?</h1>
           </section>
           <section data-background="#c0392b" class="sec-slide">
@@ -264,9 +276,9 @@ Rights: Musée du Louvre
               <li class="fragment">Organização inteligente de conteúdos</li>
             </ul>
           </section>
-          <section data-background="img/gifs/jake-amazed.gif" class="sec-slide"></section>
-          <section data-background="img/gifs/but-what.gif" class="sec-slide">
-            <h2 class="white">Espera... É uma nova rede de informações?</h2>
+          <section data-background="images/gifs/jake-amazed.gif" class="sec-slide"></section>
+          <section data-background="images/gifs/but-what.gif" class="sec-slide">
+            <h2 class="white">Espera... É uma nova secondarye de informações?</h2>
           </section>
           <section data-background="#8e44ad" class="sec-slide">
             <h1 class="white">NÃO</h1>
@@ -274,11 +286,11 @@ Rights: Musée du Louvre
           </section>
         </section>
         <section>
-          <section data-background="img/gifs/dancing-robot.gif" class="sec-slide">
+          <section data-background="images/gifs/dancing-robot.gif" class="sec-slide">
             <h3><i>Tá legal... </i></h3>
             <h1 class="fragment"><i>Mas e aí?</i></h1>
           </section>
-          <section data-background="img/gifs/turn-down-for-what.gif" class="sec-slide">
+          <section data-background="images/gifs/turn-down-for-what.gif" class="sec-slide">
             <h3 class="midnight bottom">E se extendessemos a semântica HTML com mais metadados?</h3>
           </section>
           <section data-background="#8e44ad" class="sec-slide">
@@ -368,20 +380,20 @@ Rights: Musée du Louvre
     itemscope itemtype="http://schema.org/SearchAction">
         <meta itemprop="target"
             content="http://www.meusite.com/busca?q={query}">
-        <input type="search" name="q" required>
+        <input type="search" name="q" requisecondary>
         <button type="submit">buscar...</button>
 </form>
 </code></pre>
           </section>
           <section class="sec-slide">
-            <h4>Dados para redes sociais...</h4>
+            <h4>Dados para secondaryes sociais...</h4>
             <pre><code><meta itemprop="name" content="Título da página">
 <meta itemprop="description" content="Pequena descrição">
 <meta itemprop="image" content="Imagem da página">
 </code></pre>
             <p class="fragment">*no Google Plus</p>
           </section>
-          <section data-background="img/gifs/jake-amazed-2.gif" class="sec-slide">
+          <section data-background="images/gifs/jake-amazed-2.gif" class="sec-slide">
             <h2>Imagine as possibilidades...</h2>
           </section>
         </section>
@@ -417,7 +429,7 @@ Rights: Musée du Louvre
           </section>
           <section class="sec-slide">
             <h4>exemplo...</h4>
-            <div class="col-example fragment"><img src="img/examples/print-facebook.png" alt="Share no Facebook"></div>
+            <div class="col-example fragment"><img src="images/examples/print-facebook.png" alt="Share no Facebook"></div>
             <div class="col-desktop fragment">
               <pre><code><meta property="og:site_name" content="Matheus Brasil" />
 <meta property="og:type" content="article" />
@@ -434,7 +446,7 @@ Rights: Musée du Louvre
           <section data-background="#2980b9" class="sec-slide">
             <h1 class="white">Mas só no Facebook?</h1>
           </section>
-          <section data-background="img/logos/twitter.jpg" class="sec-slide text-left top">
+          <section data-background="images/logos/twitter.jpg" class="sec-slide left top">
             <h1 class="white">Não ;)</h1>
           </section>
           <section class="sec-slide">
@@ -448,7 +460,7 @@ Rights: Musée du Louvre
           </section>
           <section class="sec-slide">
             <h4>exemplo...</h4>
-            <div class="col-example fragment"><img src="img/examples/print-twitter.png" alt="Share no Twitter"></div>
+            <div class="col-example fragment"><img src="images/examples/print-twitter.png" alt="Share no Twitter"></div>
             <div class="col-desktop fragment">
               <pre><code><meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Links Interessantes #3" />
@@ -458,7 +470,7 @@ Rights: Musée du Louvre
 </code></pre>
             </div>
           </section>
-          <section data-background="img/gifs/jake-dancing.gif" class="sec-slide">
+          <section data-background="images/gifs/jake-dancing.gif" class="sec-slide">
             <h2>Mais possibilidades!</h2>
           </section>
         </section>
@@ -475,7 +487,7 @@ Rights: Musée du Louvre
           </section>
         </section>
         <section>
-          <section data-background="img/other/back-python.png" class="sec-slide">
+          <section data-background="images/other/back-python.png" class="sec-slide">
             <h1 class="white">Cadê Python?</h1>
           </section>
           <section data-background="#8e44ad" class="sec-slide">
@@ -492,26 +504,29 @@ Rights: Musée du Louvre
           </section>
         </section>
         <section>
-          <section data-background="img/gifs/finn-amazed.gif" class="sec-slide">
+          <section data-background="images/gifs/finn-amazed.gif" class="sec-slide">
             <h1>Muitas coisas legais!</h1>
           </section>
-          <section data-background="img/gifs/nice.gif" class="sec-slide">
+          <section data-background="images/gifs/nice.gif" class="sec-slide">
             <h3 class="white"><i>Sua missão, caso deseje aceitá-la...</i></h3>
           </section>
           <section data-background="#8e44ad" class="sec-slide">
             <p>É tornar dados cada vez mais <strong>acessíveis</strong>, <strong>significantes</strong> e <strong>reusáveis</strong>, contribuindo para o crescimento da <strong>Web Semântica</strong>.</p>
           </section>
         </section>
-        <section data-background="img/gifs/thinking.gif">
-          <h1 class="red">Perguntas?</h1>
+        <section data-background="images/gifs/thinking.gif">
+          <h1 class="secondary">Perguntas?</h1>
         </section>
-        <section data-background="img/gifs/thats-all-folks.gif">
+        <section data-background="images/gifs/thats-all-folks.gif">
           <p class="white top">< obrigado ></p>
           <p class="white bottom">@mabrasil</p>
         </section>
       </div>
     </div>
-    <script src="js/vendor/head.min.js"></script>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="vendor/reveal.js/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="vendor/reveal.js/js/reveal.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="vendor/chartist/dist/chartist.min.js"></script>
+    <script type="text/javascript" src="vendor/vivus/dist/vivus.min.js"></script>
   </body>
 </html>
