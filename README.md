@@ -28,3 +28,21 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Attendees:** ≈40
 - **Description:** An introduction to the importance of one of the key concepts behind the Semantic Web: metadata. I will cover two of the most used patterns: Microdata and the Open Graph, and how metadata can help your project to have information organized in a way that not only humans understand it, regardless of the technology used on the back end.
 - **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/pylestras/).
+
+#### [I Ionic Meetup Fortaleza](http://www.meetup.com/pt/Ionic-Ceara/events/224620543/)
+
+- **Title:** *Um projeto mobile open source em duas semanas (ou uma talk sobre como melhorar seu workflow Ionic)*
+- **When:** August, 15
+- **Where:** Universidade de Fortaleza - Unifor.
+- **Attendees:** ≈40
+- **Description:** In this talk I'll share some of the experiences I had while working on [Conf App Boilerplate](https://github.com/devevents/conf-app-boilerplate) - which aimed to be used to develop the [Front In Fortaleza mobile app](https://play.google.com/store/apps/details?id=com.devevents.frontinfortaleza) in *two weeks*. You'll see how we used trending technologies like [Jade](http://jade-lang.com/), [SASS](http://sass-lang.com/), [Typescript](http://www.typescriptlang.org/), [Gulp](http://gulpjs.com/) - and many others -, to help our code gain in aspects of readability and maintainability - and our team, productivity.
+- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/ionic-meetup/).
+
+#### [Unidev 2](http://unidevce.github.io/)
+
+- **Title:** *De volta para o futuro: funcional nos dias atuais*
+- **When:** September, 26
+- **Where:** Universidade de Fortaleza - Unifor.
+- **Attendees:** ≈50
+- **Description:** Have you ever stopped to think why something as old as functional programming is so buzzed nowadays? Embark on this journey with me and [Ian](http://akaian.com/) where we will explain this and the importance of using functional concepts nowadays.
+- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/unidev/).
