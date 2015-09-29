@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html>
+  <!-- Contains data set at config.json-->
   <head>
+    <!-- Title-->
+    <title>Uma Introdução a Git &amp; Github</title>
+    <!-- Basic Metadata-->
     <meta charset="UTF-8">
     <meta name="description" content="Slides from my talk at Festival Latino Americano de Instalação de Software Livre (FLISOL 2015) about the importance of versioning and sharing code on Github.">
-    <meta name="author" content="Matheus Albuquerque Brasil">
+    <meta name="author" content="@mabrasil_io">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uma Introdução a Git & Github | @mabrasil</title>
-    <!-- Social: Facebook-->
-    <meta property="og:url" content="http://mabrasil.github.io/talks/2015/flisol">
-    <meta property="og:type" content="article">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="vendor/reveal.js/css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="vendor/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" href="vendor/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="images/meta/favicon.png">
+    <!-- Social Metadata-->
+    <!-- Social: Facebook / Open Graph-->
     <meta property="og:title" content="Uma Introdução a Git &amp; Github">
-    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/flisol/img/other/slides-cover.png">
     <meta property="og:description" content="Slides from my talk at Festival Latino Americano de Instalação de Software Livre (FLISOL 2015) about the importance of versioning and sharing code on Github.">
-    <meta property="og:site_name" content="@mabrasil | Talks">
-    <meta property="article:author" content="https://www.facebook.com/matheus.brasil.56884">
-    <meta property="article:publisher" content="https://www.facebook.com/matheus.brasil.56884">
+    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/flisol/images/meta/screenshot.png">
+    <meta property="og:url" content="http://mabrasil.github.io/talks/2015/flisol">
+    <meta property="og:site_name" content="Uma Introdução a Git &amp; Github">
+    <meta property="og:type" content="website">
     <!-- Social: Twitter-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@mabrasil_io">
     <meta name="twitter:title" content="Uma Introdução a Git &amp; Github">
     <meta name="twitter:description" content="Slides from my talk at Festival Latino Americano de Instalação de Software Livre (FLISOL 2015) about the importance of versioning and sharing code on Github.">
-    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/flisol/img/other/slides-cover.png">
-    <!-- Styles & Reveal-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/vendor/reveal.min.js"></script>
+    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/flisol/images/meta/screenshot.png">
+    <meta name="twitter:url" content="http://mabrasil.github.io/talks/2015/flisol">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Social: Google+-->
+    <meta itemprop="name" content="Uma Introdução a Git &amp; Github">
+    <meta itemprop="description" content="Slides from my talk at Festival Latino Americano de Instalação de Software Livre (FLISOL 2015) about the importance of versioning and sharing code on Github.">
+    <meta itemprop="image" content="http://mabrasil.github.io/talks/2015/flisol/images/meta/screenshot.png">
+    <!-- Google Analytics Tracking-->
+    <!-- Google Analytics tracking-->
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-background="img/home.jpg">
+        <section data-background="images/home.jpg">
           <h3 class="white">Uma introdução a</h3>
           <hr>
           <h1 class="white">Git e Github</h1>
-          <h5 class="white text-left">@mabrasil</h5>
-          <h5 class="white text-right">#FLISOL2015</h5>
+          <h5 class="white left">@mabrasil</h5>
+          <h5 class="white right">#FLISOL2015</h5>
         </section>
         <section>
-          <section class="sec-slide text-left">
+          <section class="sec-slide left">
             <h3>Eu sou...</h3>
             <ul>
               <li class="fragment">Full Stack Developer</li>
@@ -46,23 +58,23 @@
           </section>
           <section class="sec-slide">
             <h3>Desenvolvedor Front End</h3>
-            <hr><img src="img/logos/chegola.svg" alt="Chego Lá">
+            <hr><img src="images/logos/chegola.svg" alt="Chego Lá">
           </section>
           <section class="sec-slide">
             <h2>Vocês podem me achar...</h2>
-            <div class="col-3 fragment"><img src="img/social/blog.png" alt="Meu Blog">
+            <div class="col-3 fragment"><img src="images/social/blog.png" alt="Meu Blog">
               <p>mabrasil.rocks</p>
             </div>
-            <div class="col-3 fragment"><img src="img/social/twitter.png" alt="Meu Twitter">
+            <div class="col-3 fragment"><img src="images/social/twitter.png" alt="Meu Twitter">
               <p>@mabrasil_io</p>
             </div>
-            <div class="col-3 fragment"><img src="img/social/gh.png" alt="Meu Github">
+            <div class="col-3 fragment"><img src="images/social/gh.png" alt="Meu Github">
               <p>/mabrasil</p>
             </div>
           </section>
         </section>
-        <section class="sec-slide text-left">
-          <h3 class="text-left">Agenda</h3>
+        <section class="sec-slide left">
+          <h3 class="left">Agenda</h3>
           <ul>
             <li class="fragment">Controle de Versão?</li>
             <li class="fragment">Git</li>
@@ -112,14 +124,14 @@
             <p>hello-world-4.html</p>
           </section>
           <section class="sec-slide">
-            <h1 class="blue">...	</h1>
+            <h1 class="primary">...	</h1>
           </section>
         </section>
-        <section><img src="img/other/version-control-geek-&amp;-poke.jpg" alt="A Necessidade de Versionar"></section>
+        <section><img src="images/other/version-control-geek-&amp;-poke.jpg" alt="A Necessidade de Versionar"></section>
         <section>
-          <h3 class="blue fragment">DESENVOLVIMENTO</h3>
-          <h3 class="blue fragment">TESTES</h3>
-          <h3 class="blue fragment">PRODUÇÃO</h3>
+          <h3 class="primary fragment">DESENVOLVIMENTO</h3>
+          <h3 class="primary fragment">TESTES</h3>
+          <h3 class="primary fragment">PRODUÇÃO</h3>
         </section>
         <section>
           <section data-background="#93c47d" class="sec-slide">
@@ -140,10 +152,10 @@
           </section>
         </section>
         <section>
-          <section data-background="img/other/uncle-sam.jpg" class="top sec-slide">
-            <h1 class="red">I want you to Version Control your code!</h1>
+          <section data-background="images/other/uncle-sam.jpg" class="top sec-slide">
+            <h1 class="secondary">I want you to Version Control your code!</h1>
           </section>
-          <section class="sec-slide"><img src="img/other/cilada.svg" alt="É cilada, Bino!" width="70%"></section>
+          <section class="sec-slide"><img src="images/other/cilada.svg" alt="É cilada, Bino!" width="70%"></section>
         </section>
         <section data-background="#2980b9">
           <h1>Controle de Versão!</h1>
@@ -163,14 +175,14 @@
             </ul>
           </section>
           <section class="sec-slide">
-            <h2>Centralizados</h2><img src="img/operations/operacoes_basicas_centralizado.png" alt="Sistemas de Controle de Versionamento Centalizados" width="50%">
+            <h2>Centralizados</h2><img src="images/operations/operacoes_basicas_centralizado.png" alt="Sistemas de Controle de Versionamento Centalizados" width="50%">
           </section>
           <section class="sec-slide">
             <h2>Centralizados</h2>
-            <div class="col-3 fragment"><img src="img/systems/cvs.jpeg" alt="CVS">
+            <div class="col-3 fragment"><img src="images/systems/cvs.jpeg" alt="CVS">
               <p>CVS</p>
             </div>
-            <div class="col-3 fragment"><img src="img/systems/subversion.png" alt="Subversion">
+            <div class="col-3 fragment"><img src="images/systems/subversion.png" alt="Subversion">
               <p>Subversion</p>
             </div>
           </section>
@@ -179,28 +191,28 @@
             <ul>
               <li class="fragment">Cada desenvolvedor mantem um repositório</li>
               <li class="fragment">Estrutura <i>Pull/push/commit</i></li>
-              <li class="fragment">Comunicação mínima através da rede, commits mais rápidos :)</li>
+              <li class="fragment">Comunicação mínima através da secondarye, commits mais rápidos :)</li>
             </ul>
           </section>
           <section class="sec-slide">
-            <h2>Distribuídos</h2><img src="img/operations/operacoes_basicas_distribuido.png" alt="Sistemas de Controle de Versionamento Distribuídos" width="50%">
+            <h2>Distribuídos</h2><img src="images/operations/operacoes_basicas_distribuido.png" alt="Sistemas de Controle de Versionamento Distribuídos" width="50%">
           </section>
           <section class="sec-slide">
             <h2>Distribuídos</h2>
-            <div class="col-3 fragment"><img src="img/systems/mercurial.png" alt="Mercurial">
+            <div class="col-3 fragment"><img src="images/systems/mercurial.png" alt="Mercurial">
               <p>Mercurial</p>
             </div>
-            <div class="col-3 fragment"><img src="img/systems/bazaar.png" alt="Bazaar">
+            <div class="col-3 fragment"><img src="images/systems/bazaar.png" alt="Bazaar">
               <p>Bazaar</p>
             </div>
-            <div class="col-3 fragment"><img src="img/systems/darcs.svg" alt="Darcs">
+            <div class="col-3 fragment"><img src="images/systems/darcs.svg" alt="Darcs">
               <p>Darcs</p>
             </div>
           </section>
         </section>
-        <section data-background="img/gifs/torvalds.gif"></section>
+        <section data-background="images/gifs/torvalds.gif"></section>
         <section>
-          <section class="sec-slide"><img src="img/systems/git.png" alt="Git"></section>
+          <section class="sec-slide"><img src="images/systems/git.png" alt="Git"></section>
           <section data-background="#93c47d" class="sec-slide">
             <h1 class="white">Filosofia</h1>
           </section>
@@ -235,8 +247,8 @@
           </section>
         </section>
         <section>
-          <section class="sec-slide"><img src="img/logos/github.png" alt="Github"></section>
-          <section data-background="img/gifs/party.gif" class="sec-slide">
+          <section class="sec-slide"><img src="images/logos/github.png" alt="Github"></section>
+          <section data-background="images/gifs/party.gif" class="sec-slide">
             <h1 class="white">Coding goes social!</h1>
           </section>
           <section class="sec-slide">
@@ -251,7 +263,7 @@
               <li class="fragment">Octocat!</li>
             </ul>
           </section>
-          <section class="sec-slide"><img src="img/other/gangnamtocat.png" alt="Oppan Github Style" width="60%"></section>
+          <section class="sec-slide"><img src="images/other/gangnamtocat.png" alt="Oppan Github Style" width="60%"></section>
         </section>
         <section>
           <section data-background="#2980b9" class="sec-slide">
@@ -270,29 +282,29 @@
           <section data-background="#2980b9" class="sec-slide">
             <h1 class="white">Mercado de Trabalho</h1>
           </section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/print-1.png" alt="A importância para o Mercado"></section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/print-2.png" alt="A importância para o Mercado"></section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/print-3.png" alt="A importância para o Mercado"></section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/print-4.png" alt="A importância para o Mercado"></section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/print-5.png" alt="A importância para o Mercado"></section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/print-6.png" alt="A importância para o Mercado"></section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/print-7.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/print-1.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/print-2.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/print-3.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/print-4.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/print-5.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/print-6.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/print-7.png" alt="A importância para o Mercado"></section>
           <section data-background="#8e7cc3" class="sec-slide">
             <h1 class="white">Só empresas pequenas?</h1>
           </section>
           <section data-background="#c0392b" class="sec-slide">
             <h1 class="white">Nop ;)</h1>
           </section>
-          <section data-background="white" class="sec-slide"><img src="img/logos/gcom-logo.png" alt="A importância para o Mercado"></section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/print-8.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/logos/gcom-logo.png" alt="A importância para o Mercado"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/print-8.png" alt="A importância para o Mercado"></section>
           <section data-background="#8e7cc3" class="sec-slide">
             <h1 class="white">Só empresas privadas?</h1>
           </section>
           <section data-background="#c0392b" class="sec-slide">
             <h1 class="white">Nop ;)</h1>
           </section>
-          <section data-background="img/obama.gif" class="sec-slide"></section>
-          <section data-background="white" class="sec-slide"><img src="img/prints/governo.png" alt="Github Government">
+          <section data-background="images/obama.gif" class="sec-slide"></section>
+          <section data-background="white" class="sec-slide"><img src="images/prints/governo.png" alt="Github Government">
             <p><i>https://government.github.com/</i></p>
           </section>
           <section data-background="#274e13" class="sec-slide">
@@ -307,29 +319,32 @@
               <li class="fragment">20+</li>
             </ul>
           </section>
-          <section data-background="img/gifs/happy.gif" class="sec-slide"></section>
+          <section data-background="images/gifs/happy.gif" class="sec-slide"></section>
         </section>
         <section>
           <section data-background="#2980b9" class="sec-slide">
             <h1 class="white">Vamos começar?</h1>
           </section>
           <section class="sec-slide">
-            <h2 class="blue">Botando a mão na massa</h2><img src="img/other/steroidtocat.png" alt="Ficar Monstro dos Open Source" width="70%">
+            <h2 class="primary">Botando a mão na massa</h2><img src="images/other/steroidtocat.png" alt="Ficar Monstro dos Open Source" width="70%">
           </section>
         </section>
-        <section data-background="img/gifs/question.gif">
+        <section data-background="images/gifs/question.gif">
           <h1 class="white">Perguntas?</h1>
         </section>
-        <section data-background="img/other/where-magic-happens.jpg">
-          <h1 class="blue">É contigo!</h1>
+        <section data-background="images/other/where-magic-happens.jpg">
+          <h1 class="primary">É contigo!</h1>
         </section>
-        <section data-background="img/gifs/thats-all-folks.gif">
+        <section data-background="images/gifs/thats-all-folks.gif">
           <p class="white top">< obrigado ></p>
           <p class="white bottom">@mabrasil</p>
         </section>
       </div>
     </div>
-    <script src="js/vendor/head.min.js"></script>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="vendor/reveal.js/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="vendor/reveal.js/js/reveal.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="vendor/chartist/dist/chartist.min.js"></script>
+    <script type="text/javascript" src="vendor/vivus/dist/vivus.min.js"></script>
   </body>
 </html>
