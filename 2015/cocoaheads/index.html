@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html>
+  <!-- Contains data set at config.json-->
   <head>
+    <!-- Title-->
+    <title>Super Aplicações Híbridas com Ionic</title>
+    <!-- Basic Metadata-->
     <meta charset="UTF-8">
-    <meta name="description" content="Aplicações Híbridas com Ionic">
-    <meta name="author" content="Matheus Albuquerque Brasil">
+    <meta name="description" content=" Slides from my talk at CocoaHeads Fortaleza about building hybrid mobile apps with Ionic Framework.">
+    <meta name="author" content="@mabrasil_io">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Apps Híbridas com Ionic | @mabrasil</title>
-    <!-- Social: Facebook-->
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="vendor/reveal.js/css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="vendor/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" href="vendor/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="images/meta/favicon.png">
+    <!-- Social Metadata-->
+    <!-- Social: Facebook / Open Graph-->
+    <meta property="og:title" content="Super Aplicações Híbridas com Ionic">
+    <meta property="og:description" content=" Slides from my talk at CocoaHeads Fortaleza about building hybrid mobile apps with Ionic Framework.">
+    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/cocoaheads/images/meta/screenshot.png">
     <meta property="og:url" content="http://mabrasil.github.io/talks/2015/cocoaheads">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Aplicações Híbridas com Ionic">
-    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/cocoaheads/img/other/slides-cover.png">
-    <meta property="og:description" content="Slides from my talk at III CocoaHeads Fortaleza about building hybrid mobile apps with Ionic Framework.">
-    <meta property="og:site_name" content="@mabrasil | Talks">
-    <meta property="article:author" content="https://www.facebook.com/matheus.brasil.56884">
-    <meta property="article:publisher" content="https://www.facebook.com/matheus.brasil.56884">
+    <meta property="og:site_name" content="Super Aplicações Híbridas com Ionic">
+    <meta property="og:type" content="website">
     <!-- Social: Twitter-->
+    <meta name="twitter:title" content="Super Aplicações Híbridas com Ionic">
+    <meta name="twitter:description" content=" Slides from my talk at CocoaHeads Fortaleza about building hybrid mobile apps with Ionic Framework.">
+    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/cocoaheads/images/meta/screenshot.png">
+    <meta name="twitter:url" content="http://mabrasil.github.io/talks/2015/cocoaheads">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@mabrasil_io">
-    <meta name="twitter:title" content="Aplicações Híbridas com Ionic">
-    <meta name="twitter:description" content="Slides from my talk at III CocoaHeads Fortaleza about building hybrid mobile apps with Ionic Framework.">
-    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/cocoaheads/img/other/slides-cover.png">
-    <!-- Styles & Reveal-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/vendor/reveal.min.js"></script>
+    <!-- Social: Google+-->
+    <meta itemprop="name" content="Super Aplicações Híbridas com Ionic">
+    <meta itemprop="description" content=" Slides from my talk at CocoaHeads Fortaleza about building hybrid mobile apps with Ionic Framework.">
+    <meta itemprop="image" content="http://mabrasil.github.io/talks/2015/cocoaheads/images/meta/screenshot.png">
+    <!-- Google Analytics Tracking-->
+    <!-- Google Analytics tracking-->
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-background="img/home.jpg">
+        <section data-background="images/home.jpg">
           <h4 class="white">(SUPER)</h4>
           <h1 class="white">APPS HÍBRIDOS</h1>
           <h4 class="white">COM</h4>
           <h1 class="white">IONIC FRAMEWORK</h1>
-          <h5 class="white text-left">@mabrasil</h5>
-          <h5 class="white text-left">@AbraaoAlves</h5>
-          <h5 class="white text-right">#CocoaHeads</h5>
+          <h5 class="white left">@mabrasil</h5>
+          <h5 class="white left">@AbraaoAlves</h5>
+          <h5 class="white right">#CocoaHeads</h5>
         </section>
         <section data-background="#2980b9">
           <h3 class="white">Slides disponíveis em</h3>
           <p class="fragment">☞  mabrasil.github.io/talks/2015/cocoaheads</p>
         </section>
         <section>
-          <section class="sec-slide text-left">
+          <section class="sec-slide left">
             <h3>Eu sou...</h3>
             <ul>
               <li class="fragment">Full Stack Developer</li>
@@ -52,23 +64,23 @@
           </section>
           <section class="sec-slide">
             <h3>Desenvolvedor Front End</h3>
-            <hr><img src="img/logos/chegola.svg" alt="Chego Lá">
+            <hr><img src="images/logos/chegola.svg" alt="Chego Lá">
           </section>
           <section class="sec-slide">
             <h2>Vocês podem me achar...</h2>
-            <div class="col-3 fragment"><img src="img/social/blog.png" alt="Meu Blog">
+            <div class="col-3 fragment"><img src="images/social/blog.png" alt="Meu Blog">
               <p>mabrasil.rocks</p>
             </div>
-            <div class="col-3 fragment"><img src="img/social/twitter.png" alt="Meu Twitter">
+            <div class="col-3 fragment"><img src="images/social/twitter.png" alt="Meu Twitter">
               <p>@mabrasil_io</p>
             </div>
-            <div class="col-3 fragment"><img src="img/social/gh.png" alt="Meu Github">
+            <div class="col-3 fragment"><img src="images/social/gh.png" alt="Meu Github">
               <p>/mabrasil</p>
             </div>
           </section>
         </section>
         <section>
-          <section class="sec-slide text-left">
+          <section class="sec-slide left">
             <h3>Eu sou...</h3>
             <ul>
               <li class="fragment">Full Stack Developer</li>
@@ -78,23 +90,23 @@
           </section>
           <section class="sec-slide">
             <h3>CTO</h3>
-            <hr><img src="img/logos/cia-sustentavel.svg" alt="Cia. Sustentável" width="50%">
+            <hr><img src="images/logos/cia-sustentavel.svg" alt="Cia. Sustentável" width="50%">
           </section>
           <section class="sec-slide">
             <h2>Vocês podem me achar...</h2>
-            <div class="col-3 fragment"><img src="img/social/gh.png" alt="Meu Github">
+            <div class="col-3 fragment"><img src="images/social/gh.png" alt="Meu Github">
               <p>/AbraaoAlves</p>
             </div>
-            <div class="col-3 fragment"><img src="img/social/twitter.png" alt="Meu Twitter">
+            <div class="col-3 fragment"><img src="images/social/twitter.png" alt="Meu Twitter">
               <p>@abraao4lves</p>
             </div>
-            <div class="col-3 fragment"><img src="img/social/medium.png" alt="Minha conta na Medium">
+            <div class="col-3 fragment"><img src="images/social/medium.png" alt="Minha conta na Medium">
               <p>@abraoalves</p>
             </div>
           </section>
         </section>
-        <section class="sec-slide text-left">
-          <h3 class="text-left">Agenda</h3>
+        <section class="sec-slide left">
+          <h3 class="left">Agenda</h3>
           <ul>
             <!-- - with 4br@@0-->
             <li class="fragment">Nativos X Híbridos</li>
@@ -112,18 +124,18 @@
             <li class="fragment">Por onde começar?</li>
           </ul>
         </section>
-        <section data-background="img/other/fight.jpg">
-          <h1 class="blue">Híbrido</h1>
+        <section data-background="images/other/fight.jpg">
+          <h1 class="primary">Híbrido</h1>
           <h1 class="white"><i>VS</i></h1>
-          <h1 class="blue">Nativo</h1>
+          <h1 class="primary">Nativo</h1>
         </section>
         <section data-background="#2980b9">
           <h1 class="white"><i>Então você quer desenvolver um app nativo?</i></h1>
         </section>
         <section data-background="#c0392b">
-          <div class="col-3 fragment"><img src="img/platforms/apple.png" alt="Apple iOS"></div>
-          <div class="col-3 fragment"><img src="img/platforms/android.png" alt="Google Android"></div>
-          <div class="col-3 fragment"><img src="img/platforms/windows.png" alt="Windows Phone"></div>
+          <div class="col-3 fragment"><img src="images/platforms/apple.png" alt="Apple iOS"></div>
+          <div class="col-3 fragment"><img src="images/platforms/android.png" alt="Google Android"></div>
+          <div class="col-3 fragment"><img src="images/platforms/windows.png" alt="Windows Phone"></div>
           <h2 class="fragment">...</h2>
           <h4 class="fragment"><i>Mais plataformas, mais problemas :/ </i></h4>
         </section>
@@ -141,7 +153,7 @@
           </section>
         </section>
         <section>
-          <section data-background="img/gifs/but-what.gif" class="sec-slide">
+          <section data-background="images/gifs/but-what.gif" class="sec-slide">
             <h1 class="white">Então os SDKs nativos são ruins?</h1>
           </section>
           <section data-background="#c0392b" class="sec-slide">
@@ -161,11 +173,11 @@
             </ul>
           </section>
         </section>
-        <section data-background="img/gifs/confused.gif">
+        <section data-background="images/gifs/confused.gif">
           <h1 class="white"><i>Não dá pra melhorar?</i></h1>
         </section>
         <section>
-          <section class="sec-slide"><img src="img/logos/cordova.png" alt="Apache Cordova"></section>
+          <section class="sec-slide"><img src="images/logos/cordova.png" alt="Apache Cordova"></section>
           <section class="sec-slide">
             <h3>Como começou?</h3>
             <ul>
@@ -186,11 +198,11 @@
           </section>
         </section>
         <section>
-          <section data-background="img/other/mimimi.jpg" class="sec-slide">
+          <section data-background="images/other/mimimi.jpg" class="sec-slide">
             <h1><i>Mas... aplicações híbridas são lentas!</i></h1>
           </section>
-          <section data-background="img/other/keep-calm-work-hard-and-stop-mimimi.png" class="sec-slide"></section>
-          <section data-background="img/gifs/recalque.gif" class="sec-slide">
+          <section data-background="images/other/keep-calm-work-hard-and-stop-mimimi.png" class="sec-slide"></section>
+          <section data-background="images/gifs/recalque.gif" class="sec-slide">
             <h1>Os tempos são outros ;)</h1>
           </section>
           <section class="sec-slide">
@@ -227,7 +239,7 @@
           <section data-background="#93c47d" class="sec-slide">
             <h1 class="white">E onde está o SDK da web?</h1>
           </section>
-          <section data-background="img/other/404.jpg" class="sec-slidesection sec-slide"></section>
+          <section data-background="images/other/404.jpg" class="sec-slidesection sec-slide"></section>
           <section class="sec-slide">
             <ul>
               <li class="fragment">Necessidade de preencher a lacuna entre web e nativo</li>
@@ -237,47 +249,47 @@
           </section>
         </section>
         <section>
-          <section data-background="#2980b9" class="sec-slide"><img src="img/logos/ionic-logo.png" alt="Ionic &lt;3"></section>
+          <section data-background="#2980b9" class="sec-slide"><img src="images/logos/ionic-logo.png" alt="Ionic &lt;3"></section>
           <section class="sec-slide">
             <h2>Combinações interessantes...</h2>
-            <div class="col-3 fragment"><img src="img/features/html.png" alt="HTML5">
+            <div class="col-3 fragment"><img src="images/features/html.png" alt="HTML5">
               <p>HTML5</p>
             </div>
-            <div class="col-3 fragment"><img src="img/features/css.png" alt="CSS3">
+            <div class="col-3 fragment"><img src="images/features/css.png" alt="CSS3">
               <p>CSS3</p>
             </div>
-            <div class="col-3 fragment"><img src="img/features/js.png" alt="Javascript">
+            <div class="col-3 fragment"><img src="images/features/js.png" alt="Javascript">
               <p>Javascript</p>
             </div>
           </section>
           <section class="sec-slide">
             <h2>Combinações interessantes...</h2>
-            <div class="col-3 fragment"><img src="img/features/angular-ionic.png" alt="AngularJS &lt;3">
+            <div class="col-3 fragment"><img src="images/features/angular-ionic.png" alt="AngularJS &lt;3">
               <p>AngularJS <3</p>
             </div>
-            <div class="col-3 fragment"><img src="img/features/performance.png" alt="Desempenho importa">
+            <div class="col-3 fragment"><img src="images/features/performance.png" alt="Desempenho importa">
               <p>Desempenho importa</p>
             </div>
-            <div class="col-3 fragment"><img src="img/features/native.png" alt="Focado no nativo">
+            <div class="col-3 fragment"><img src="images/features/native.png" alt="Focado no nativo">
               <p>Focado no nativo</p>
             </div>
           </section>
           <section data-background="#2980b9" class="sec-slide">
             <h2 class="white">Tudo isso em:</h2>
-            <div class="col-3 fragment"><img src="img/platforms/apple.png" alt="Apple iOS"></div>
-            <div class="col-3 fragment"><img src="img/platforms/android.png" alt="Google Android"></div>
+            <div class="col-3 fragment"><img src="images/platforms/apple.png" alt="Apple iOS"></div>
+            <div class="col-3 fragment"><img src="images/platforms/android.png" alt="Google Android"></div>
           </section>
         </section>
         <section>
-          <section data-background="img/components/ui-components.jpg" class="sec-slide">
-            <h1 class="blue">Componentes de UI</h1>
+          <section data-background="images/components/ui-components.jpg" class="sec-slide">
+            <h1 class="primary">Componentes de UI</h1>
           </section>
           <section data-background="#93c47d" class="sec-slide">
-            <h2 class="white">Ionicons</h2><img src="img/components/ionicons.png" alt="Ionicons" width="80%">
+            <h2 class="white">Ionicons</h2><img src="images/components/ionicons.png" alt="Ionicons" width="80%">
           </section>
           <section class="sec-slide">
             <h2>Menu Lateral</h2>
-            <div class="col-iphone"><img src="img/components/sidemenu.png" alt="Menu Lateral"></div>
+            <div class="col-iphone"><img src="images/components/sidemenu.png" alt="Menu Lateral"></div>
             <div class="col-desktop">
               <pre><code><ion-side-menus>
   <ion-side-menu-content>
@@ -302,7 +314,7 @@
           </section>
           <section class="sec-slide">
             <h2>Abas</h2>
-            <div class="col-iphone"><img src="img/components/tabs.png" alt="Abas"></div>
+            <div class="col-iphone"><img src="images/components/tabs.png" alt="Abas"></div>
             <div class="col-desktop">
               <pre><code><ion-tabs class="tabs-icon-only">
   <ion-tab title="Home"
@@ -325,7 +337,7 @@
           </section>
           <section class="sec-slide">
             <h2>Listas</h2>
-            <div class="col-iphone"><img src="img/components/list.png" alt="Listas"></div>
+            <div class="col-iphone"><img src="images/components/list.png" alt="Listas"></div>
             <div class="col-desktop">
               <pre><code><div class="list">
   <div class="item item-divider">
@@ -346,7 +358,7 @@
           </section>
           <section class="sec-slide">
             <h2>Navigation</h2>
-            <div class="col-iphone"><img src="img/components/navigation.png" alt="Navigation"></div>
+            <div class="col-iphone"><img src="images/components/navigation.png" alt="Navigation"></div>
             <div class="col-desktop">
               <pre><code><ion-nav-bar>
   <ion-nav-back-button>
@@ -362,7 +374,7 @@
           </section>
           <section class="sec-slide">
             <h2>Slide Box</h2>
-            <div class="col-iphone"><img src="img/components/slidebox.png" alt="Slide Box"></div>
+            <div class="col-iphone"><img src="images/components/slidebox.png" alt="Slide Box"></div>
             <div class="col-desktop">
               <pre><code><ion-slide-box
     on-slide-changed="change(index)">
@@ -381,7 +393,7 @@
           </section>
           <section class="sec-slide">
             <h2>Action Sheet</h2>
-            <div class="col-iphone"><img src="img/components/actionsheet.png" alt="Action Sheet"></div>
+            <div class="col-iphone"><img src="images/components/actionsheet.png" alt="Action Sheet"></div>
             <div class="col-desktop">
               <pre><code>$ionicActionSheet.show({
   titleText: 'Modify your album',
@@ -401,7 +413,7 @@
           </section>
           <section class="sec-slide">
             <h2>Refresher</h2>
-            <div class="col-iphone"><img src="img/components/actionsheet.png" alt="Refresher"></div>
+            <div class="col-iphone"><img src="images/components/actionsheet.png" alt="Refresher"></div>
             <div class="col-desktop">
               <pre><code><ion-content on-refresh="refreshData()">
   <ion-refresher></ion-refresher>
@@ -417,7 +429,7 @@
               <li>Plugins</li>
             </ul>
             <div class="fragment">
-              <div class="col-iphone"><img src="img/logos/cordova-plugin-1.png" alt="Refresher"></div>
+              <div class="col-iphone"><img src="images/logos/cordova-plugin-1.png" alt="Refresher"></div>
               <div class="col-desktop">
                 <pre><code>$ ionic plugin add org.apache.cordova.camera
 $ ionic plugin add org.apache.cordova.console
@@ -428,8 +440,8 @@ $ ionic plugin add my.namespace.amazing-plugin</code></pre>
           </section>
         </section>
         <section>
-          <section data-background="img/tools/tools.jpg" class="sec-slide">
-            <h1 class="blue">Ferramentas</h1>
+          <section data-background="images/tools/tools.jpg" class="sec-slide">
+            <h1 class="primary">Ferramentas</h1>
           </section>
           <section class="sec-slide">
             <h2>Ionic CLI</h2>
@@ -447,25 +459,25 @@ $ ionic build [OS]
             </p>
           </section>
           <section class="sec-slide">
-            <h2>Ionic Playground</h2><img src="img/tools/playground.png" alt="Ionic Playground" width="80%">
+            <h2>Ionic Playground</h2><img src="images/tools/playground.png" alt="Ionic Playground" width="80%">
             <p>Demos no navegador, sem ter que instalar nada :)</p>
             <p class="green">play.ionic.io</p>
           </section>
           <section class="sec-slide">
-            <h2>Ionic Creator</h2><img src="img/tools/creator.png" alt="Ionic Creator">
+            <h2>Ionic Creator</h2><img src="images/tools/creator.png" alt="Ionic Creator">
             <p>Ferramenta <i>drag-and-drop</i> para prototipagem de interfaces</p>
             <p class="green">creator.ionic.io</p>
           </section>
           <section class="sec-slide">
             <h2>Ionic Lab</h2>
-            <div class="col-desktop"><img src="img/tools/lab.png" alt="Ionic Lab"></div>
+            <div class="col-desktop"><img src="images/tools/lab.png" alt="Ionic Lab"></div>
             <p>Debug Android e iOS simultaneamente</p>
             <pre><code>$ ionic serve --lab
 </code></pre>
           </section>
           <section class="sec-slide">
             <h2>Ionic View</h2>
-            <div class="col-iphone"><img src="img/tools/view.png" alt="Ionic View"></div>
+            <div class="col-iphone"><img src="images/tools/view.png" alt="Ionic View"></div>
             <div class="col-desktop">
               <p>Visualizar/Compatilhar/Testar apps em vários aparelhos</p>
               <pre><code>$ ionic start myApp
@@ -475,7 +487,7 @@ $ ionic upload</code></pre>
           </section>
         </section>
         <section>
-          <section data-background="img/gifs/suspecious.gif" class="sec-slide">
+          <section data-background="images/gifs/suspecious.gif" class="sec-slide">
             <h1 class="white">As pessoas usam mesmo?</h1>
           </section>
           <section class="sec-slide">
@@ -488,12 +500,12 @@ $ ionic upload</code></pre>
               <li class="fragment">...</li>
             </ul>
           </section>
-          <section data-background="img/gifs/willy-wonka.gif" class="sec-slide">
+          <section data-background="images/gifs/willy-wonka.gif" class="sec-slide">
             <h1 class="white">Tire suas conclusões...</h1>
           </section>
         </section>
         <section>
-          <section data-background="img/gifs/race.gif" class="sec-slide">
+          <section data-background="images/gifs/race.gif" class="sec-slide">
             <h1 class="white">Como começar?</h1>
           </section>
           <section class="sec-slide">
@@ -506,16 +518,19 @@ $ ionic upload</code></pre>
 $ npm install -g cordova ionic gulp</code></pre>
           </section>
         </section>
-        <section data-background="img/gifs/question.gif">
-          <h1 class="red">Perguntas?</h1>
+        <section data-background="images/gifs/question.gif">
+          <h1 class="secondary">Perguntas?</h1>
         </section>
-        <section data-background="img/gifs/thats-all-folks.gif">
+        <section data-background="images/gifs/thats-all-folks.gif">
           <p class="white top">< obrigado ></p>
           <p class="white bottom">@mabrasil & @AbraaoAlves</p>
         </section>
       </div>
     </div>
-    <script src="js/vendor/head.min.js"></script>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="vendor/reveal.js/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="vendor/reveal.js/js/reveal.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="vendor/chartist/dist/chartist.min.js"></script>
+    <script type="text/javascript" src="vendor/vivus/dist/vivus.min.js"></script>
   </body>
 </html>
