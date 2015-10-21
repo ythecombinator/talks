@@ -46,3 +46,12 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Attendees:** ≈50
 - **Description:** Have you ever stopped to think why something as old as functional programming is so buzzed nowadays? Embark on this journey with me and [Ian](http://akaian.com/) where we will explain this and the importance of using functional concepts nowadays.
 - **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/unidev/).
+
+#### [SETIC 2015](http://unidevce.github.io/)
+
+- **Title:** *De volta para o futuro: funcional nos dias atuais*
+- **When:** October, 20
+- **Where:** Universidade Federal do Ceará - Campus do Pici.
+- **Attendees:** ≈30
+- **Description:** Have you ever stopped to think why something as old as functional programming is so buzzed nowadays? Embark on this journey with me and [Ian](http://akaian.com/) where we will explain this and the importance of using functional concepts nowadays.
+- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/setic/).
