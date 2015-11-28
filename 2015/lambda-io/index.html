@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  <!-- Contains data set at config.json-->
+  <head>
+    <!-- Title-->
+    <title>De volta para o futuro: a importância de Funcional nos dias atuais</title>
+    <!-- Basic Metadata-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Slides from my talk at SETIC about the importance of Functional Programming.">
+    <meta name="author" content="@mabrasil_io">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="vendor/reveal.js/css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="vendor/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" href="vendor/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="images/meta/favicon.png">
+    <!-- Social Metadata-->
+    <!-- Social: Facebook / Open Graph-->
+    <meta property="og:title" content="De volta para o futuro: a importância de Funcional nos dias atuais">
+    <meta property="og:description" content="Slides from my talk at SETIC about the importance of Functional Programming.">
+    <meta property="og:image" content="http://mabrasil.github.io/talks/2015/setic/images/meta/screenshot.png">
+    <meta property="og:url" content="http://mabrasil.github.io/talks/2015/setic">
+    <meta property="og:site_name" content="De volta para o futuro: a importância de Funcional nos dias atuais">
+    <meta property="og:type" content="website">
+    <!-- Social: Twitter-->
+    <meta name="twitter:title" content="De volta para o futuro: a importância de Funcional nos dias atuais">
+    <meta name="twitter:description" content="Slides from my talk at SETIC about the importance of Functional Programming.">
+    <meta property="twitter:image:src" content="http://mabrasil.github.io/talks/2015/setic/images/meta/screenshot.png">
+    <meta name="twitter:url" content="http://mabrasil.github.io/talks/2015/setic">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Social: Google+-->
+    <meta itemprop="name" content="De volta para o futuro: a importância de Funcional nos dias atuais">
+    <meta itemprop="description" content="Slides from my talk at SETIC about the importance of Functional Programming.">
+    <meta itemprop="image" content="http://mabrasil.github.io/talks/2015/setic/images/meta/screenshot.png">
+    <!-- Google Analytics Tracking-->
+    <!-- Google Analytics tracking-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="images/home.png"></section>
+        <section data-background="#d35400">
+          <h3 class="white">Slides disponíveis em</h3>
+          <p class="fragment">☞ bit.ly/funcional-nos-dias-atuais</p>
+        </section>
+        <section>
+          <section class="sec-slide left">
+            <h3>Eu sou...</h3>
+            <ul>
+              <li class="fragment">Unix Philosopher</li>
+              <li class="fragment">Alquimista da Web</li>
+              <li class="fragment">Estudante de Informática no IFCE (<3)</li>
+            </ul>
+          </section>
+          <section class="sec-slide">
+            <h2>Vocês podem me achar...</h2>
+            <div class="col-3 fragment"><img src="images/social/twitter.png" alt="Meu Twitter">
+              <p>@mabrasil_io</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/social/gh.png" alt="Meu Github">
+              <p>/mabrasil</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/social/blog.png" alt="Meu Blog">
+              <p>mabrasil.rocks</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section class="sec-slide left">
+            <h3>Eu sou...</h3>
+            <ul>
+              <li class="fragment">Full Stack Developer</li>
+              <li class="fragment">Apaixonado por tecnologia</li>
+              <li class="fragment">Contribuidor Mozilla</li>
+              <li class="fragment">Evangelista de coisas legais</li>
+            </ul>
+          </section>
+          <section class="sec-slide">
+            <h2>Vocês podem me achar...</h2>
+            <div class="col-3 fragment"><img src="images/social/gh.png" alt="Meu Github">
+              <p>/IanRamosC</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/social/twitter.png" alt="Meu Twitter">
+              <p>@ianramosc</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/social/blog.png" alt="Meu Site">
+              <p>akaian.com</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section class="sec-slide left">
+            <h3 class="left">Agenda</h3>
+            <ul>
+              <li class="fragment">Paradigmas?</li>
+              <li class="fragment">A programação funcional</li>
+              <li class="fragment">Os problemas do presente</li>
+              <li class="fragment">Resolvendo os problemas do presente</li>
+              <li class="fragment">Alguns casos</li>
+              <li class="fragment">Um pouco de história</li>
+              <li class="fragment">O futuro</li>
+              <li class="fragment">Por onde começar?</li>
+            </ul>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white">Em resumo...</h1>
+          </section>
+          <section class="sec-slide left">
+            <h3 class="left">Agenda</h3>
+            <ul>
+              <li class="fragment">Passado</li>
+              <li class="fragment">Presente</li>
+              <li class="fragment">Futuro</li>
+              <p class="fragment">*Não necessariamente nessa ordem</p>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white">Quem aqui...?</h1>
+          </section>
+          <section data-background="#27ae60" class="sec-slide">
+            <h1 class="white">Essa talk é pra vocês :)</h1>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Começando</h1>
+            <h2 class="white upper">do</h2>
+            <h1 class="white upper">Começo</h1>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Paradigmas</h1>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white">Imperativas</h1>
+            <hr>
+            <h1 class="white">Declarativas</h1>
+          </section>
+          <section class="sec-slide left">
+            <h3>Imperativas</h3>
+            <ul>
+              <li class="fragment">Expressam uma lista de instruções para o programa.</li>
+              <li class="fragment">Estruturada, OOP...</li>
+              <li class="fragment">C, C++, Objective-C, Java, C#, Pascal, PHP, Ruby, Python, Perl, JavaScript, Lua, Fortran, Cobol, Smalltalk, Self...</li>
+            </ul>
+          </section>
+          <section class="sec-slide left">
+            <h3>Declarativas</h3>
+            <ul>
+              <li class="fragment">Não descrevem <i>como</i> fazer algo, e sim <i>o quê</i> deve ser feito.</li>
+              <li class="fragment">Lógicas, Funcionais...</li>
+              <li class="fragment">Prolog, Common Lisp, Scheme, Dylan, Clojure, Scala, F#, OCaml, SML, Haskell, Erlang...</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h2 class="white upper">O paradigma</h2>
+            <h1 class="white upper">Funcional</h1>
+          </section>
+          <section data-background="#c0392b" class="sec-slide">
+            <h1 class="white upper left">Mas antes...</h1>
+          </section>
+          <section data-background="#c0392b" class="sec-slide">
+            <h1 class="white upper left">Estado?</h1>
+          </section>
+          <section data-background="#f39c12" class="sec-slide">
+            <h3 class="white left"><i>“The functional programmer sounds rather like a medieval monk, denying himself the pleasures of life in the hope that it will make him virtuous.”.</i></h3>
+            <p class="white right">John Hughes</p>
+            <p class="white fragment">(Ju Gonçalves - Reduce seu novo melhor amigo)</p>
+          </section>
+          <section data-background="#f39c12" class="sec-slide">
+            <h3 class="white left"><i>“Em ciência da computação, programação funcional é um paradigma de programação que trata a computação como uma avaliação de funções matemáticas e que evita estados ou dados mutáveis.”.</i></h3>
+            <p class="white right">Wikipedia</p>
+          </section>
+          <section class="sec-slide left">
+            <h3>Funcional é sobre...</h3>
+            <p class="fragment">✔ Pensar em quais informações eu quero e que transformações são necessárias para alcançá-las</p>
+            <p class="fragment">✘ Como executar tarefas (algoritmos)</p>
+          </section>
+          <section class="sec-slide left">
+            <h3>Funcional é sobre...</h3>
+            <p class="fragment">✔ Evitar ao máximo mudanças de estado</p>
+            <p class="fragment">✘ Promover e acompanhar mudanças de estado</p>
+          </section>
+          <section class="sec-slide left">
+            <h3>Funcional é sobre...</h3>
+            <p class="fragment">✔ Não ter de se preocupar com a ordem das execuções*</p>
+            <p class="fragment">✘ A ordem importa <i>muito</i></p>
+            <p class="fragment">*em geral</p>
+          </section>
+          <section class="sec-slide left">
+            <h3>Funcional é sobre...</h3>
+            <p class="fragment">✔ Pensar em fluxo baseado em chamadas de funções</p>
+            <p class="fragment">✘ Loops, condicionais, métodos...</p>
+          </section>
+          <section class="sec-slide left">
+            <h3>Funcional é sobre...</h3>
+            <p class="fragment">✔ Ter funções como unidade primária</p>
+            <p class="fragment">✘ Instâncias de classes, estruturas...</p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h2 class="white upper">O paradigma</h2>
+            <h1 class="white upper">Funcional</h1>
+          </section>
+          <section class="sec-slide left">
+            <h3>Pure Functions</h3>
+            <pre><code>--| Exemplos
+
+quadrado :: Integer -> Integer
+quadrado x = x * x
+
+somaTres :: Integer -> Integer -> Integer -> Integer
+somaTres x y z = x + y + z
+
+fatorial :: Integer -> Integer
+fatorial n = product [1..n]
+</code></pre>
+          </section>
+          <section class="sec-slide left">
+            <h3>High-Order Functions</h3>
+            <pre><code>--| Exemplos
+
+map :: (a -> b) -> [a] -> [b]
+filter :: (a -> Bool) -> [a] -> [a]
+</code></pre>
+          </section>
+          <section class="sec-slide left">
+            <h3>First Class Functions</h3>
+            <pre><code>var add = function(a, b){
+  return a + b
+}
+</code></pre>
+          </section>
+          <section class="sec-slide left">
+            <h3>Pattern Matching</h3>
+            <pre><code>checaIntervalo :: (Integral a) => a -> String
+checaIntervalo 1 = "Um"
+checaIntervalo 2 = "Dois"
+checaIntervalo 3 = "Três"
+checaIntervalo 4 = "Quatro"
+checaIntervalo 5 = "Cinco"
+checaIntervalo _ = "Não tá no intervalo"
+
+--| Se lembram do fatorial?
+
+fatorial :: (Integral a) => a -> a
+fatorial 0 = 1
+fatorial n = n * fatorial (n - 1)
+</code></pre>
+          </section>
+          <section class="sec-slide left">
+            <h3>List Comprehensions</h3>
+            <pre><code>quadrado = [ x * x | x <- nums, x > 2 ]
+
+-- | Se lembram do map?
+[x+3 | x <- [1,5,3,1,6]]
+
+-- | Com um predicado...
+[ 2*x | x <- [0..], x ^ 2 > 3 ]
+</code></pre>
+          </section>
+          <section class="sec-slide left">
+            <h3>Curry/Uncurry</h3>
+            <pre><code>curry :: ((a, b) -> c) -> a -> b -> c
+uncurry :: (a -> b -> c) -> (a, b) -> c
+</code></pre>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white">...</h1>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Vamos falar</h1>
+            <h2 class="white upper">de</h2>
+            <h1 class="white upper">Problemas?</h1>
+          </section>
+          <section class="sec-slide left">
+            <ul>
+              <li class="fragment">Escalabilidade</li>
+              <li class="fragment">Paralelismo/Concorrência</li>
+              <li class="fragment">Escalabilidade</li>
+              <li class="fragment">Manutenibilidade (expressividade, legibilidade, testabilidade)</li>
+              <li class="fragment">E...</li>
+              <li class="fragment">Escalabilidade</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h2 class="white upper">E cadê</h2>
+            <h1 class="white upper">Funcional</h1>
+            <h2 class="white upper">???</h2>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Expressividade</h1>
+          </section>
+          <section data-background="#f39c12" class="sec-slide left">
+            <h2 class="white">Funcional...</h2>
+            <ul>
+              <li class="fragment">Cada função é projetada para realizar uma tarefa específica dada seus argumentos.</li>
+              <li class="fragment">Tenha certeza do que cada uma faz.</li>
+            </ul>
+          </section>
+          <section data-background="#f39c12" class="sec-slide">
+            <table>
+              <tr>
+                <td><strong>Linguagem</strong></td>
+                <td><strong>Nota</strong></td>
+              </tr>
+              <tr>
+                <td>Clojure</td>
+                <td>0.41</td>
+              </tr>
+              <tr>
+                <td>Haskell</td>
+                <td>0.83</td>
+              </tr>
+              <tr>
+                <td>R</td>
+                <td>0.85</td>
+              </tr>
+              <tr>
+                <td>MATLAB</td>
+                <td>1.14</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>1.27</td>
+              </tr>
+              <tr>
+                <td>Ruby</td>
+                <td>1.36</td>
+              </tr>
+              <tr>
+                <td>Common Lisp</td>
+                <td>1.56</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>1.61</td>
+              </tr>
+            </table>
+            <p><i>Retirados de: http://goo.gl/u2JBkM</i></p>
+          </section>
+          <section data-background="#f39c12" class="sec-slide left">
+            <h2 class="white">Funcional...</h2>
+            <p class="fragment">✔ Legibilidade</p>
+            <p class="fragment">✔ Manutenibilidade</p>
+            <p class="fragment">✔ Produtividade</p>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Paralelização</h1>
+            <h3 class="white upper">&</h3>
+            <h1 class="white upper">Concorrência</h1>
+          </section>
+          <section data-background="#c0392b" class="sec-slide">
+            <h1 class="white upper left">Mas antes...</h1>
+          </section>
+          <section data-background="#c0392b" class="sec-slide">
+            <h1 class="white upper left">Paralelismo</h1>
+            <h2 class="white upper left">!=</h2>
+            <h1 class="white upper left">Concorrência</h1>
+          </section>
+          <section class="sec-slide left">
+            <h2>Concorrência...</h2>
+            <ul>
+              <li class="fragment"><i>X</i> tarefas em um <strong>mesmo período de tempo</strong></li>
+              <li class="fragment"><strong>Compartilham os recursos do sistema</strong></li>
+              <li class="fragment">Logicamente independentes</li>
+            </ul>
+          </section>
+          <section class="sec-slide left">
+            <h2>Concorrência...</h2>
+            <p class="fragment">✘ Identificar aspectos concorrentes no problema a ser resolvido</p>
+            <p class="fragment">✘ Gerenciar como os dados são acessados e compartilhados entre as tarefas</p>
+          </section>
+          <section class="sec-slide left">
+            <h2>Paralelismo...</h2>
+            <ul>
+              <li class="fragment">Divisão de uma tarefa complexa em tarefas menores</li>
+              <li class="fragment">Processadas de maneira independente e simultânea em <strong>múltiplas unidades de processamento</strong></li>
+            </ul>
+          </section>
+          <section class="sec-slide left">
+            <h2>Paralelismo...</h2>
+            <p class="fragment">✘ Mudanças no estado tem de ser conhecidas e pensadas</p>
+          </section>
+          <section data-background="#27ae60" class="sec-slide left">
+            <h2 class="white">Em resumo...</h2>
+            <ul>
+              <li class="fragment"><strong>Paralelismo</strong> diz respeito a tarefas que rodam ao mesmo tempo, em múltiplos hardwares.</li>
+              <li class="fragment"><strong>Concorrência</strong> diz respeito a tarefas que podem rodar independentemente, compartilhando hardware.</li>
+            </ul>
+          </section>
+          <section data-background="#27ae60" class="sec-slide left">
+            <h1 class="white upper">Voltando...</h1>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Paralelização</h1>
+            <h3 class="white upper">&</h3>
+            <h1 class="white upper">Concorrência</h1>
+          </section>
+          <section data-background="images/other/selvagens-a-procura-de-lei.jpg" class="sec-slide">
+            <h2 class="white left"><i>“Você é a estrela negra da sexta-feira; Você é a grande sacada”.</i></h2>
+            <p class="white right">Amigos Libertinos - Selvagens à Procura de Lei</p>
+          </section>
+          <section data-background="#f39c12" class="sec-slide left">
+            <h2 class="white">Funcional...</h2>
+            <p class="fragment">✔ Paralelismo</p>
+            <p class="fragment">✔ Concorrência</p>
+            <p class="fragment">✔ Escalabilidade</p>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Testabilidade</h1>
+          </section>
+          <section data-background="#f39c12" class="sec-slide left">
+            <h2 class="white">Funcional...</h2>
+            <ul>
+              <li class="fragment">Funções puras podem ser mais facilmente testadas de forma isolada</li>
+              <li class="fragment">Testes executados simultaneamente</li>
+            </ul>
+          </section>
+          <section data-background="#f39c12" class="sec-slide left">
+            <h2 class="white">Funcional...</h2>
+            <p class="fragment">✔ Desempenho</p>
+            <p class="fragment">✔ Maior testabilidade</p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Alguém usa?</h1>
+          </section>
+          <section class="sec-slide"><img src="images/cases/use_cases.png" alt="Só universidades..."></section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Haskell</h1>
+          </section>
+          <section class="sec-slide">
+            <div class="col-3 fragment"><img src="images/cases/facebook.png" alt="Facebook">
+              <p>Facebook</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/google.png" alt="Google">
+              <p>Google</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/microsoft.png" alt="Microsoft">
+              <p>Microsoft</p>
+            </div>
+          </section>
+          <section class="sec-slide left">
+            <h3>E mais...</h3>
+            <ul>
+              <li class="fragment">AT&T, na divisão de Segurança de Rede</li>
+              <li class="fragment">Intel, em pesquisas envolvendo paralelismo multicore em escala</li>
+              <li class="fragment">The New York Times, onde foi usado no processamento de imagens de grande eventos</li>
+              <li class="fragment">NVIDIA, em uma grande quantidade de ferramentas internas</li>
+            </ul>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Erlang</h1>
+          </section>
+          <section class="sec-slide">
+            <div class="col-3 fragment"><img src="images/cases/facebook.png" alt="Facebook">
+              <p>Facebook</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/github.png" alt="Github">
+              <p>Github</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/whatsapp.png" alt="WhatsApp">
+              <p>WhatsApp</p>
+            </div>
+          </section>
+          <section class="sec-slide left">
+            <h3>E mais...</h3>
+            <ul>
+              <li class="fragment">Delicious, que tem mais de 5 milhões de usuários e mais de 150 milhões de bookmarks</li>
+              <li class="fragment">Amazon SimpleDB, o serviço de dados do poderoso Amazon EC2</li>
+              <li class="fragment">Motorola</li>
+              <li class="fragment">CouchDB</li>
+              <li class="fragment">Ericsson</li>
+            </ul>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Scala</h1>
+          </section>
+          <section class="sec-slide">
+            <div class="col-3 fragment"><img src="images/cases/linkedin.png" alt="LinkedIn">
+              <p>LinkedIn</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/foursquare.png" alt="FourSquare">
+              <p>FourSquare</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/twitter.png" alt="Twitter">
+              <p>Twitter</p>
+            </div>
+          </section>
+          <section class="sec-slide left">
+            <h3>E mais...</h3>
+            <ul>
+              <li class="fragment">The Guardian, em sua API de acesso ao repositório de mídia, com ~36mi de usuários regulares</li>
+              <li class="fragment">Xerox, para uma solução de melhora de experiência em seu showroom no Reino Unido</li>
+              <li class="fragment">Sony Pictures, no gerenciamento de esquemas de DBs de projetos internos</li>
+            </ul>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper">Clojure</h1>
+          </section>
+          <section class="sec-slide">
+            <div class="col-3 fragment"><img src="images/cases/walmart.png" alt="Walmart">
+              <p>Walmart</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/tw.png" alt="Thoughtworks">
+              <p>Thoughtworks</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/atlassian.png" alt="Atlassian">
+              <p>Atlassian</p>
+            </div>
+          </section>
+          <section data-background="#16a085" class="sec-slide">
+            <h1 class="white upper">Só na gringa?</h1>
+          </section>
+          <section data-background="images/gifs/no.gif" class="sec-slide">
+            <h1 class="white upper">Nop :)</h1>
+          </section>
+          <section class="sec-slide"><img src="images/cases/nubank-apply.png" alt="Quer trabalhar na Nubank?"></section>
+          <section class="sec-slide">
+            <div class="col-3 fragment"><img src="images/cases/nubank.png" alt="Nubank">
+              <p>Nubank</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/cases/pagarme.png" alt="Pagar.me">
+              <p>Pagar.me</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white">Um pouco de história...</h1>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h2 class="white"><i>A segunda linguagem criada era funcional e apareceu por volta da década de 50.</i></h2>
+          </section>
+          <section data-background="images/gifs/strange.gif" class="sec-slide">
+            <h2 class="primary fragment">Por que então as pessoas estão empolgadas com isso apenas agora?</h2>
+          </section>
+          <section data-background="images/gifs/backing.gif" class="sec-slide">
+            <h1 class="primary">Voltando no tempo...</h1>
+          </section>
+          <section data-background="images/history/ordvac.jpg" class="sec-slide">
+            <h2 class="primary">Os computadores eram muito lentos...</h2>
+          </section>
+          <section data-background="images/history/edvac.jpg" class="sec-slide">
+            <h2 class="primary">... e não tinham tanto poder de processamento para executar os programas funcionais.</h2>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white">Além disso...</h1>
+          </section>
+          <section data-background="images/history/war.jpg" class="sec-slide">
+            <h1 class="primary">O fator histórico</h1>
+          </section>
+        </section>
+        <section>
+          <section data-background="images/gifs/the-future.gif" class="sec-slide">
+            <h1 class="primary upper">O Futuro</h1>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper left">Linguagens OO</h1>
+            <h5 class="white upper left">remando em direção à</h5>
+            <h1 class="white upper left">Funcional</h1>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">C++ (11)</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Expressões Lambda</p>
+            <p class="fragment">✔ <i>#include < algorithm > </i></p>
+            <p class="fragment">✔ Melhorias nas API de collections (map, filter...)</p>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">C# (2.0)</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Funções de alta ordem</p>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">C# (3.0)</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ LINQ (melhorias nas API de collections)</p>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Java (8)</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Expressões Lambda</p>
+            <p class="fragment">✔ Melhorias nas API de collections (map, filter...)</p>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper left">Nascimento</h1>
+            <h5 class="white upper left">de novas</h5>
+            <h1 class="white upper left">Linguagens Funcionais</h1>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Scala (2001)</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Feita para a JVM</p>
+            <p class="fragment">✔ Inspirada em Haskell, Erlang, OCaml, Scheme, Smalltalk, Java...</p>
+            <p class="fragment">✔ Híbrida (OO + Funcional)</p>
+            <p class="fragment">✔ <i>"Mais OO que Java"</i></p>
+            <p class="fragment">✔ Interoperar com Java</p>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">F# (2005)</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Feita para a plataforma .NET</p>
+            <p class="fragment">✔ Inspirada em Standard ML, ML, Haskell, Erlang, OCaml, Scala, Smalltalk, Python, C♯...</p>
+            <p class="fragment">✔ Híbrida, voltada para funcional</p>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Clojure (2007)</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Feita para a JVM - e a CLR</p>
+            <p class="fragment">✔ Inspirada em Lisp, Prolog, ML, Haskell, Erlang...</p>
+            <p class="fragment">✔ Voltada para funcional</p>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Elixir (2012)</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Feita para a EVM (BEAM)</p>
+            <p class="fragment">✔ Inspirada em Erlang, Clojure, Ruby...</p>
+            <p class="fragment">✔ Erlang + Ruby = ?</p>
+            <p class="fragment">✔ Voltada para funcional</p>
+            <p class="fragment">✔ Conceitos bem funcionais...</p>
+            <p class="fragment">✔ Nascida em território nacional \o/</p>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper left">Crescimento de comunidades</h1>
+            <h5 class="white upper left">de antigas</h5>
+            <h1 class="white upper left">Linguagens Funcionais</h1>
+          </section>
+          <section class="sec-slide">
+            <h2>Confs... Confs everywhere...</h2>
+            <div class="col-3 fragment"><img src="images/confs/haskell.png" alt="Haskell">
+              <p>Haskell</p>
+            </div>
+            <div class="col-3 fragment"><img src="images/confs/erlang.jpg" alt="Erlang">
+              <p>Erlang</p>
+            </div>
+            <h2 class="fragment">...</h2>
+          </section>
+          <section data-background="images/gifs/the-future.jpg" class="sec-slide">
+            <h1 class="primary upper">Tem mais</h1>
+            <h4 class="primary upper">sobre</h4>
+            <h1 class="primary upper">O futuro</h1>
+          </section>
+          <section class="sec-slide"><img src="images/other/lambda-io.png" alt="The Lambda I/O Foundation" width="30%"></section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Distribuição/Descentralização</p>
+            <p class="fragment">✔ Rotatividade pelo fim da doutrinação</p>
+            <p class="fragment">✔ Promover o paradigma, suas linguagens e conceitos pelos quatro cantos do país</p>
+            <p class="fragment">✔ Conferência ao final de um ciclo</p>
+          </section>
+          <section class="sec-slide"><img src="images/other/lambda-io-manifest.png" alt="The Lambda I/O Foundation"></section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Por</h1>
+            <h2 class="white upper">onde</h2>
+            <h1 class="white upper">Começo?</h1>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h3 class="white upper left">Pense</h3>
+            <h1 class="white upper left">Funcional*</h1>
+            <h3 class="white upper left">!!!</h3>
+            <p class="left white">*Declarativamente</p>
+          </section>
+          <section class="sec-slide"><img src="images/other/post-bolo-diferente.png" alt="Bolo Diferente">
+            <p>http://goo.gl/yJqEQL</p>
+          </section>
+          <section data-background="images/other/compras.jpg" class="sec-slide">
+            <h1 class="primary upper">Vamos</h1>
+            <h2 class="primary upper">ao</h2>
+            <h1 class="primary upper">supermercado?</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Início</p>
+            <p class="fragment">✔ Vestir roupa x</p>
+            <p class="fragment">...</p>
+            <p class="fragment">✔ Guardar um array de y chaves no bolso.</p>
+            <p class="fragment">✔ Ir para a garagem.</p>
+            <p class="fragment">✔ Abrir a garagem.</p>
+            <p class="fragment">✔ Entrar no carro.</p>
+            <p class="fragment">...</p>
+            <p class="fragment">✔ Colocar leite na geladeira.</p>
+            <p class="fragment">✔ Fim</p>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h1 class="white upper left">E se...</h1>
+          </section>
+          <section class="sec-slide left">
+            <ul>
+              <li class="fragment">O leite é uma bebida saudável - e devemos tomar coisas saudáveis.</li>
+              <li class="fragment">Normalmente, guarda-se leite na geladeira.</li>
+              <li class="fragment">Uma geladeira é um dispositivo que mantém coisas refrigeradas.</li>
+              <li class="fragment">Lojas são lugares onde os coisas são vendidas.</li>
+              <li class="fragment">Venda é o processo de troca de coisas por dinheiro.</li>
+              <li class="fragment">Compra é o inverso de venda.</li>
+              <li class="fragment">...</li>
+              <li class="fragment">Deve-se ter certeza de que há sempre leite na geladeira.</li>
+            </ul>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h3 class="white upper left">Pratique</h3>
+            <h1 class="white upper left">Funcional</h1>
+            <h3 class="white upper left">na sua</h3>
+            <h1 class="white upper left">Linguagem</h1>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Bibliotecas</p>
+            <p class="fragment">✔ Pré-processadores/Compiladores</p>
+            <p class="fragment">✔ Implementações nativas</p>
+            <p class="fragment">...</p>
+          </section>
+          <section data-background="#2c3e50" class="sec-slide">
+            <h3 class="white upper left">Aprenda</h3>
+            <h1 class="white upper left">Linguagens *Puras*</h1>
+          </section>
+          <section class="sec-slide"><img src="images/other/haskell-book-cover.png" alt="Haskell para crianças" width="45%">
+            <p>http://goo.gl/zml56a</p>
+          </section>
+          <section class="sec-slide left">
+            <p class="fragment">✔ Livros</p>
+            <p class="fragment">✔ Artigos</p>
+            <p class="fragment">✔ Blogs</p>
+            <p class="fragment">✔ Projetos</p>
+            <p class="fragment">...</p>
+          </section>
+        </section>
+        <section>
+          <section data-background="#d35400" class="sec-slide">
+            <h1 class="white upper">Concluindo...</h1>
+          </section>
+          <section data-background="images/other/enemy.jpg" class="sec-slide">
+            <h1 class="primary upper">Inimigo do Estado?</h1>
+          </section>
+          <section data-background="#d35400" class="sec-slide">
+            <h2 class="white left"><i>“Program imperatively when needed, and functionally when possible.”.</i></h2>
+            <p class="white right">Micheal O. Church</p>
+          </section>
+        </section>
+        <section data-background="images/gifs/question.gif">
+          <h1 class="primary">Perguntas?</h1>
+        </section>
+        <section data-background="images/gifs/thats-all-folks.gif">
+          <p class="white top">< obrigado ></p>
+          <p class="white bottom">@mabrasil & @IanRamosC</p>
+        </section>
+      </div>
+    </div>
+    <script type="text/javascript" src="vendor/reveal.js/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="vendor/reveal.js/js/reveal.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="vendor/chartist/dist/chartist.min.js"></script>
+    <script type="text/javascript" src="vendor/vivus/dist/vivus.min.js"></script>
+  </body>
+</html>
