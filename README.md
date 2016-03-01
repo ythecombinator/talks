@@ -55,3 +55,12 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Attendees:** ≈30.
 - **Description:** Have you ever stopped to think why something as old as functional programming is so buzzed nowadays? Join me and [Ian](http://akaian.com/) on this journey with  where we will explain this and the importance of using functional concepts nowadays.
 - **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/setic/).
+
+#### [I Node User Group Ceará (NUG-CE) Meetup](http://nug-ce.org/)
+
+- **Title:** *Repensando automação: NPM to rule them all*
+- **When:** November, 21.
+- **Where:** Universidade de Fortaleza - Unifor.
+- **Attendees:** ≈50.
+- **Description:** Somethings in the JavaScript world may require a considerable number of tasks: managing assets, styles compilation and minification, JavaScript files concatenation, minification and compression etc. We have many amazing tools to help us in these processes: [Grunt](http://gruntjs.com/) and [Gulp](http://gulpjs.com/) are the most popular these days - but are they really necessary?
+- **Presentation:** [See it live here](http://nug-ce-repensando-automacao.surge.sh/#/).
