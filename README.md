@@ -101,7 +101,7 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Where:** Universidade de Fortaleza - Unifor.
 - **Attendees:** ≈30.
 - **Description:** We will see how old concepts of functional programming can make a huge difference nowadays for JS developers through [LiveScript](http://livescript.net/): a preprocessor which brings many syntax enhancements and other features and became a great alternative to start in the functional world. After this *NUG-CE* - equipped with *first-class functions*, *high-order functions*, *currying*, *composition*, *pipes* and other things - you'll probably never write the same code again.
-- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2016/nug/).
+- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2016/nug-ce/).
 
 #### [BEPiD Internal](http://bepid.ifce.edu.br/)
 
