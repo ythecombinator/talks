@@ -72,7 +72,7 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Where:** Universidade de Fortaleza - Unifor.
 - **Attendees:** ≈15.
 - **Description:** Have you ever stopped to think why something as old as functional programming is so buzzed nowadays? Join me and [Ian](http://akaian.com/) on this journey with  where we will explain this and the importance of using functional concepts nowadays.
-- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/http://mabrasil.github.io/talks/2015/lambda-io/).
+- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/lambda-io/).
 
 ### 2016
 
@@ -83,4 +83,13 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Where:** Universidade de Fortaleza - Unifor.
 - **Attendees:** ≈30.
 - **Description:** We will see how old concepts of functional programming can make a huge difference nowadays for JS developers through [LiveScript](http://livescript.net/): a preprocessor which brings many syntax enhancements and other features and became a great alternative to start in the functional world. After this *NUG-CE* - equipped with *first-class functions*, *high-order functions*, *currying*, *composition*, *pipes* and other things - you'll probably never write the same code again.
-- **Presentation:** [See it live here](http://slides.com/mabrasil/break-on-through-to-the-side/).
+- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2016/nug/).
+
+#### [BEPiD Internal](http://bepid.ifce.edu.br/)
+
+- **Title:** *Uma introdução a Versionamento, Git e outras coisas*
+- **When:** April, 20.
+- **Where:** Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Campus Fortaleza.
+- **Attendees:** ≈40.
+- **Description:** This workshop [Murilo](https://github.com/pogist) and I will present a brief introduction to the concept of software versioning and its importance. There will be also  presented the famous versioning control system created by [Linus Torvalds](https://github.com/torvalds) ([Git](https://git-scm.com/)) and the well known *social network for programmers*, [Github](https://github.com/), showing its importance to our professional career nowadays.
+- **Presentation:** [See it live here](http://mabrasil.github.io/talks/2016/bepid/versioning-and-git/).
