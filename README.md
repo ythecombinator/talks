@@ -4,6 +4,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 
 #### [FLISOL 2015](http://flisolce.org/)
 
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
+
 - **Title:** *Uma Introdução a Git & Github*
 - **When:** April, 25.
 - **Where:** Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Campus Fortaleza.
@@ -12,6 +14,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/flisol/).
 
 #### [3º CocoaHeads Fortaleza](http://www.cocoaheads.com.br/agendas/detalhes/79/)
+
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
 
 - **Title:** *Aplicações Híbridas com Ionic*
 - **When:** May, 28.
@@ -22,6 +26,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 
 #### [IX Pylestras](http://pylestras.org/evento/ix-pylestras/)
 
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
+
 - **Title:** *Aventurando-se com metadados: Micro Data e Open Graph*
 - **When:** May, 30.
 - **Where:** Universidade de Fortaleza - Unifor.
@@ -30,6 +36,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/pylestras/).
 
 #### [I Ionic Meetup Fortaleza](http://www.meetup.com/pt/Ionic-Ceara/events/224620543/)
+
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
 
 - **Title:** *Um projeto mobile open source em duas semanas (ou uma talk sobre como melhorar seu workflow Ionic)*
 - **When:** August, 15.
@@ -40,6 +48,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 
 #### [Unidev 2](http://unidevce.github.io/)
 
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
+
 - **Title:** *De volta para o futuro: funcional nos dias atuais*
 - **When:** September, 26.
 - **Where:** Universidade de Fortaleza - Unifor.
@@ -48,6 +58,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Presentation:** [See it live here](http://mabrasil.github.io/talks/2015/unidev/).
 
 #### [SETIC 2015](http://unidevce.github.io/)
+
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
 
 - **Title:** *De volta para o futuro: funcional nos dias atuais*
 - **When:** October, 20.
@@ -58,6 +70,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 
 #### [I Node User Group Ceará (NUG-CE) Meetup](http://nug-ce.org/)
 
+![Status](https://img.shields.io/badge/type-lightning talk-yellowgreen.svg?style=flat-square)
+
 - **Title:** *Repensando automação: NPM to rule them all*
 - **When:** November, 21.
 - **Where:** Universidade de Fortaleza - Unifor.
@@ -66,6 +80,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Presentation:** [See it live here](http://nug-ce-repensando-automacao.surge.sh/#/).
 
 #### [I Lambda I/O Fortaleza Meetup](http://lambda-io-fortaleza.github.io/)
+
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
 
 - **Title:** *De volta para o futuro: funcional nos dias atuais*
 - **When:** November, 28.
@@ -78,6 +94,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 
 #### [II Node User Group Ceará (NUG-CE) Meetup](http://nug-ce.org/)
 
+![Status](https://img.shields.io/badge/type-lightning talk-yellowgreen.svg?style=flat-square)
+
 - **Title:** *Break On Through (To The λ Side)*
 - **When:** February, 27.
 - **Where:** Universidade de Fortaleza - Unifor.
@@ -86,6 +104,8 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Presentation:** [See it live here](http://mabrasil.github.io/talks/2016/nug/).
 
 #### [BEPiD Internal](http://bepid.ifce.edu.br/)
+
+![Status](https://img.shields.io/badge/type-workshop-orange.svg?style=flat-square)
 
 - **Title:** *Uma introdução a Versionamento, Git e outras coisas*
 - **When:** April, 20.
