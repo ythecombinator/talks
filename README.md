@@ -113,3 +113,15 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Attendees:** ≈40.
 - **Description:** This workshop [Murilo](https://github.com/pogist) and I will present a brief introduction to the concept of software versioning and its importance. There will be also  presented the famous versioning control system created by [Linus Torvalds](https://github.com/torvalds) ([Git](https://git-scm.com/)) and the well known *social network for programmers*, [Github](https://github.com/), showing its importance to our professional career nowadays.
 - **Presentation:** [See it live here](http://mabrasil.github.io/talks/2016/bepid/versioning-and-git/).
+
+#### [CE.JS 2016](http://www.cejs.com.br/)
+
+![Status](https://img.shields.io/badge/type-lightning talk-yellowgreen.svg?style=flat-square)
+
+- **Title:** *JavaScript In The Sky With Types*
+- **When:** June, 04.
+- **Where:** Faculdade 7 de Setembro - FA7 Fortaleza.
+- **Attendees:** ≈150.
+- **Description:** This time [Abraão](https://github.com/AbraaoAlves) and I will talk on the importance of thinking about type systems - and how your *JavaScripting time* can be better with TypeScript + other tools.
+- **Presentation:** [See it live here](https://speakerdeck.com/ythecombinator/javascript-in-the-sky-with-types).
+
