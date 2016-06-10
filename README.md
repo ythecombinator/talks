@@ -122,6 +122,5 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **When:** June, 04.
 - **Where:** Faculdade 7 de Setembro - FA7 Fortaleza.
 - **Attendees:** ≈150.
-- **Description:** This time [Abraão](https://github.com/AbraaoAlves) and I will talk on the importance of thinking about type systems - and how your *JavaScripting time* can be better with TypeScript + other tools.
+- **Description:** This time [Abraão](https://github.com/AbraaoAlves) and I will talk on the importance of thinking about - and, obviously, understanding well - type systems - and how your *JavaScripting time* can be better with [TypeScript](https://www.typescriptlang.org/) + other tools.
 - **Presentation:** [See it live here](https://speakerdeck.com/ythecombinator/javascript-in-the-sky-with-types).
-
