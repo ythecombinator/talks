@@ -124,3 +124,25 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Attendees:** ≈150.
 - **Description:** This time [Abraão](https://github.com/AbraaoAlves) and I will talk on the importance of thinking about - and, obviously, understanding well - type systems - and how your *JavaScripting time* can be better with [TypeScript](https://www.typescriptlang.org/) + other tools.
 - **Presentation:** [See it live here](https://speakerdeck.com/ythecombinator/javascript-in-the-sky-with-types).
+
+#### [BEPiD Internal](http://bepid.ifce.edu.br/)
+
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
+
+- **Title:** *Designing For Humans (like You & Me)*
+- **When:** June, 22.
+- **Where:** Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Campus Fortaleza.
+- **Attendees:** ≈40.
+- **Description:** Just a small conversation which aims to integrate basic knowledge of areas related to user feedback research, experience journeys creation, user behavior analysis - among others -, with the aim of presenting basic aspects of user interfaces under the bias of understanding them based on our cognitive functions.
+- **Presentation:** [See it live here](https://speakerdeck.com/ythecombinator/designing-for-humans-like-you-and-me).
+
+#### [BEPiD Internal](http://bepid.ifce.edu.br/)
+
+![Status](https://img.shields.io/badge/type-workshop-orange.svg?style=flat-square)
+
+- **Title:** *The Art of Notifications*
+- **When:** July, 05.
+- **Where:** Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Campus Fortaleza.
+- **Attendees:** ≈40.
+- **Description:** A *two-day-based* workshop on understanding and implementing local and push notifications in an iOS app.
+- **Presentation:** [See it live here](https://speakerdeck.com/ythecombinator/the-art-of-notifications).
