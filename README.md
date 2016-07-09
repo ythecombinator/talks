@@ -147,7 +147,7 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Description:** A *two-day-based* workshop on understanding and implementing local and push notifications in an iOS app.
 - **Presentation:** [See it live here](https://speakerdeck.com/ythecombinator/the-art-of-notifications).
 
-#### [3º CocoaHeads Fortaleza](http://www.cocoaheads.com.br/agendas/detalhes/79/)
+#### [3º CocoaHeads Fortaleza](http://www.cocoaheads.com.br/agendas/detalhes/151)
 
 ![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
 
