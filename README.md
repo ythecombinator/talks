@@ -146,3 +146,14 @@ Here you can find all my presentation slides or videos (if they exist) and also 
 - **Attendees:** ≈40.
 - **Description:** A *two-day-based* workshop on understanding and implementing local and push notifications in an iOS app.
 - **Presentation:** [See it live here](https://speakerdeck.com/ythecombinator/the-art-of-notifications).
+
+#### [3º CocoaHeads Fortaleza](http://www.cocoaheads.com.br/agendas/detalhes/79/)
+
+![Status](https://img.shields.io/badge/type-talk-brightgreen.svg?style=flat-square)
+
+- **Title:** *Designing For Humans (like You & Me)*
+- **When:** July, 07.
+- **Where:** Instituto Federal de Educação, Ciência e Tecnologia do Ceará, Campus Fortaleza.
+- **Attendees:** ≈30.
+- **Description:** Just a small conversation which aims to integrate basic knowledge of areas related to user feedback research, experience journeys creation, user behavior analysis - among others -, with the aim of presenting basic aspects of user interfaces under the bias of understanding them based on our cognitive functions.
+- **Presentation:** [See it live here](https://speakerdeck.com/ythecombinator/designing-for-humans-like-you-and-me-reviewed).
